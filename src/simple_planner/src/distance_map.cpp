@@ -1,4 +1,4 @@
-#include "distance_map.hpp"
+#include "distance_map.hpp" //include corresponding hpps
 #include "utils.hpp"  
 
 namespace planner {
@@ -14,7 +14,7 @@ namespace planner {
         cv::imwrite("map_distance.png", distance_map_image);
     }
 
-    cv::Mat compute_distance_map(const nav_msgs::msg::OccupancyGrid& map) { // simple BFS starting from obstacles
+    cv::Mat compute_distance_map(const nav_msgs::msg::OccupancyGrid& map) { // BFS starting from obstacles
         cv::Mat distance_map(map.info.height, map.info.width, CV_32S, cv::Scalar(255));
         queue<pair<int, int>*> frontier;
         vector<vector<bool>> visited(int(map.info.height), vector<bool>(int(map.info.width), false));
