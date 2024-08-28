@@ -4,7 +4,7 @@ Final project for the course of Robot Programming
 
 ## Simple Planner: A* Based Path Planner with Obstacle Avoidance
 
-This ROS2 package implements a simple A* based path planner with obstacle avoidance capabilities. The planner uses laser scans to detect obstacles and works alongside the AMCL localization and the Nav2 stack.
+This Project implements a simple A* based path planner with obstacle avoidance capabilities. The planner uses laser scans to detect obstacles and works alongside the AMCL localization and the Nav2 stack.
 
 ## Project Structure
 
@@ -49,28 +49,40 @@ The project is organized as follows:
     ```bash
     git clone https://github.com/saudhussainkhand/RobotProgrammingProject.git
     ```
-
-2. **Build the project using colcon at your ros2_ws:**
+2. **Move the simple_planner folder in your workspace src:**
+3. **Build the project using colcon at your ros2_ws:**
     ```bash
     cd ros2_ws/
     colcon build
     ```
 
-3. **Source the workspace:**
+4. **Source the workspace:**
     ```bash
     source install/setup.bash
     ```
 
-4. **Run the entire system by launching the `planner_launch.xml` file:**
+5. **Run the entire system by launching the `planner_launch.xml` file:**
     ```bash
     ros2 launch simple_planner planner_launch.xml
     ```
 
-### Features:
-- **A* Path Planning:** Implements the A* search algorithm to compute an optimal path from the start to the goal.
-- **Obstacle Avoidance:** Uses laser scans to avoid obstacles in the environment.
-- **AMCL Localization:** Integrated with the AMCL package for robot localization in a known map.
-- **Nav2 Integration:** Utilizes Nav2's costmaps, controllers, and behavior trees for navigation.
+### How Simple Planner Implements Key Features
+
+1. **Write a program that computes the path to a user-selected goal from the current location of the robot, received as the transform map->base_link.**
+   - The planner computes a path from the robot’s current position (derived from `map -> base_link` transform) to a user-selected goal using the A* algorithm.
+
+2. **The program listens to a grid_map, extracts the obstacles, and the traversable surface (cells “brighter” than a value).**
+   - The `distance_map` function processes the occupancy grid and creates a map highlighting obstacles and traversable areas. This map is used for the path computation.
+
+3. **The cost of being in a location depends on the distance to the closest obstacle (the smaller, the higher).**
+   - The planner assigns a cost to each traversable cell based on its proximity to the nearest obstacle. Cells closer to obstacles have a higher cost, guiding the robot to safer paths.
+
+4. **Using this cost function, the program computes the path (if existing) to the goal by using your favorite search algorithm.**
+   - The planner utilizes the A* search algorithm, considering the cost map, to compute an optimal path to the goal if one exists.
+
+5. **The goal pose is received from the /move_base/goal message.**
+   - In this project, the goal pose is set using the RViz tool (by publishing to `/goal_pose`), and the planner listens to the goal pose updates to begin the pathfinding process.
+
 
 ### Dependencies:
 - **ROS 2 Humble**
