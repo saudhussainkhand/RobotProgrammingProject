@@ -82,7 +82,7 @@ The project is organized as follows:
 
 5. **The goal pose is received from the /move_base/goal message.**
    - In this project, the goal pose is set using the RViz tool (by publishing to `/goal_pose`), and the planner listens to the goal pose updates to begin the pathfinding process.
-
+   
 
 
 ### Dependencies:
