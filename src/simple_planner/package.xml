@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>simple_planner</name>
+  <version>0.0.1</version>
+  <description>
+    A ROS2 package implementing an A* based planner with obstacle avoidance capabilities.
+  </description>
+  
+  <maintainer email="hussain.1990559@studenti.uniroma1.it">Saud Hussain</maintainer>
+  <license>Apache-2.0</license>
+  
+  <!-- Build Dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!-- Runtime Dependencies -->
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>sensor_msgs</depend>  <!-- Added dependency for sensor_msgs -->
+
+  <!-- Testing Dependencies -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Export section -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
