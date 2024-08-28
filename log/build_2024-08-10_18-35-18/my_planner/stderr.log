@@ -1,0 +1,33 @@
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In constructor ‘[01m[KPlannerNode::PlannerNode()[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:8:71:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPlannerNode[m[K’ does not have any field named ‘[01m[Kpath_ready_[m[K’
+    8 | e::PlannerNode() : Node("planner_node"), current_index_(0), [01;31m[Kpath_ready_[m[K(false)
+      |                                                             [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_pose_subscriber_[m[K’ was not declared in this scope
+   18 |     [01;31m[Kstart_pose_subscriber_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:19:53:[m[K [01;31m[Kerror: [m[K‘[01m[KstartPoseCallback[m[K’ is not a member of ‘[01m[KPlannerNode[m[K’
+   19 |         "/initialpose", 10, std::bind(&PlannerNode::[01;31m[KstartPoseCallback[m[K, this, std::placeholders::_1));
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kvoid PlannerNode::plan()[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_ready_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpthread_t[m[K’?
+   35 |     [01;31m[Kpath_ready_[m[K = true;  // Enable the robot to start moving
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Kpthread_t[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kvoid PlannerNode::updateRobotPosition()[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:40:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_ready_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpthread_t[m[K’?
+   40 |     if ([01;31m[Kpath_ready_[m[K && current_index_ < path_.size())
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[Kpthread_t[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K At global scope:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:66:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid PlannerNode::startPoseCallback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’
+   66 | void [01;31m[KPlannerNode[m[K::startPoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:66:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid PlannerNode::startPoseCallback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’
+In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:11:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass PlannerNode[m[K’ defined here
+   11 | class [01;36m[KPlannerNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:76: CMakeFiles/planner_node.dir/src/planner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

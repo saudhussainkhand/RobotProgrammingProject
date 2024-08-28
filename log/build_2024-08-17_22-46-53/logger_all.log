@@ -1,0 +1,504 @@
+[0.229s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.229s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x777ade846e00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x777ade937f40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x777ade937f40>>, mixin_verb=('build',))
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.372s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zeeshan/ros2_ws'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'colcon_pkg'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['colcon_meta']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'colcon_meta'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['ros']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ros'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['cmake', 'python']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'cmake'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'python'
+[0.391s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Stage' with type 'cmake' and name 'Stage'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/configuration) by extension 'ros'
+[0.396s] DEBUG:colcon.colcon_core.package_identification:Package 'src/configuration' with type 'ros.ament_cmake' and name 'configuration'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extension 'ignore'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extension 'ignore_ament_install'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extensions ['colcon_pkg']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extension 'colcon_pkg'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extensions ['colcon_meta']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extension 'colcon_meta'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extensions ['ros']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_planner) by extension 'ros'
+[0.399s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_planner' with type 'ros.ament_cmake' and name 'my_planner'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extensions ['ignore', 'ignore_ament_install']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extension 'ignore'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extension 'ignore_ament_install'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extensions ['colcon_pkg']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extension 'colcon_pkg'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extensions ['colcon_meta']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extension 'colcon_meta'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extensions ['ros']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(src/planner) by extension 'ros'
+[0.401s] DEBUG:colcon.colcon_core.package_identification:Package 'src/planner' with type 'ros.ament_cmake' and name 'planner'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extension 'ignore'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extension 'ignore_ament_install'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extensions ['colcon_pkg']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extension 'colcon_pkg'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extensions ['colcon_meta']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extension 'colcon_meta'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extensions ['ros']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/simple_planner) by extension 'ros'
+[0.403s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simple_planner' with type 'ros.ament_cmake' and name 'simple_planner'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ignore'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ignore_ament_install'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['colcon_pkg']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'colcon_pkg'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['colcon_meta']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'colcon_meta'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['ros']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ros'
+[0.406s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stage_ros2' with type 'ros.ament_cmake' and name 'stage_ros2'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extension 'ignore'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extension 'ignore_ament_install'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extensions ['colcon_pkg']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extension 'colcon_pkg'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extensions ['colcon_meta']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extension 'colcon_meta'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extensions ['ros']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/worlds) by extension 'ros'
+[0.407s] DEBUG:colcon.colcon_core.package_identification:Package 'src/worlds' with type 'ros.ament_cmake' and name 'worlds'
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.447s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.447s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.453s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 314 installed packages in /opt/ros/humble
+[0.457s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_args' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_target' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_clean_cache' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_clean_first' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'cmake_force_configure' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'ament_cmake_args' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'catkin_cmake_args' from command line to 'None'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'Stage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.554s] DEBUG:colcon.colcon_core.verb:Building package 'Stage' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zeeshan/ros2_ws/build/Stage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zeeshan/ros2_ws/install/Stage', 'merge_install': False, 'path': '/home/zeeshan/ros2_ws/src/Stage', 'symlink_install': False, 'test_result_base': None}
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'cmake_args' from command line to 'None'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'cmake_target' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.555s] DEBUG:colcon.colcon_core.verb:Building package 'configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zeeshan/ros2_ws/build/configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zeeshan/ros2_ws/install/configuration', 'merge_install': False, 'path': '/home/zeeshan/ros2_ws/src/configuration', 'symlink_install': False, 'test_result_base': None}
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'cmake_target' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'my_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.556s] DEBUG:colcon.colcon_core.verb:Building package 'my_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zeeshan/ros2_ws/build/my_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zeeshan/ros2_ws/install/my_planner', 'merge_install': False, 'path': '/home/zeeshan/ros2_ws/src/my_planner', 'symlink_install': False, 'test_result_base': None}
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_args' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_target' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.557s] Level 5:colcon.colcon_core.verb:set package 'planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.557s] DEBUG:colcon.colcon_core.verb:Building package 'planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zeeshan/ros2_ws/build/planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zeeshan/ros2_ws/install/planner', 'merge_install': False, 'path': '/home/zeeshan/ros2_ws/src/planner', 'symlink_install': False, 'test_result_base': None}
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'cmake_target' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'simple_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.559s] DEBUG:colcon.colcon_core.verb:Building package 'simple_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zeeshan/ros2_ws/build/simple_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zeeshan/ros2_ws/install/simple_planner', 'merge_install': False, 'path': '/home/zeeshan/ros2_ws/src/simple_planner', 'symlink_install': False, 'test_result_base': None}
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'cmake_target' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'cmake_clean_cache' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'cmake_clean_first' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'cmake_force_configure' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'ament_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'catkin_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'worlds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.560s] DEBUG:colcon.colcon_core.verb:Building package 'worlds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zeeshan/ros2_ws/build/worlds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zeeshan/ros2_ws/install/worlds', 'merge_install': False, 'path': '/home/zeeshan/ros2_ws/src/worlds', 'symlink_install': False, 'test_result_base': None}
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_target' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'stage_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.562s] DEBUG:colcon.colcon_core.verb:Building package 'stage_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zeeshan/ros2_ws/build/stage_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zeeshan/ros2_ws/install/stage_ros2', 'merge_install': False, 'path': '/home/zeeshan/ros2_ws/src/stage_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.562s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.564s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.564s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zeeshan/ros2_ws/src/Stage'
+[0.569s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.569s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zeeshan/ros2_ws/src/configuration' with build type 'ament_cmake'
+[0.576s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zeeshan/ros2_ws/src/configuration'
+[0.576s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.576s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.582s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zeeshan/ros2_ws/src/my_planner' with build type 'ament_cmake'
+[0.583s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zeeshan/ros2_ws/src/my_planner'
+[0.583s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.583s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.589s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zeeshan/ros2_ws/src/planner' with build type 'ament_cmake'
+[0.589s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zeeshan/ros2_ws/src/planner'
+[0.590s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.590s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/Stage': /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/Stage -- -j4 -l4
+[0.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/configuration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/configuration -- -j4 -l4
+[0.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4
+[0.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/planner -- -j4 -l4
+[0.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/configuration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/configuration -- -j4 -l4
+[0.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4
+[0.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/configuration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/configuration
+[0.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/planner -- -j4 -l4
+[0.938s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(configuration)
+[0.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/configuration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/configuration
+[0.949s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration' for CMake module files
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration' for CMake config files
+[0.952s] Level 1:colcon.colcon_core.shell:create_environment_hook('configuration', 'cmake_prefix_path')
+[0.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/configuration/share/configuration/hook/cmake_prefix_path.ps1'
+[0.954s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/configuration/share/configuration/hook/cmake_prefix_path.dsv'
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/configuration/share/configuration/hook/cmake_prefix_path.sh'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/bin'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/lib/pkgconfig/configuration.pc'
+[0.958s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/lib/python3.10/site-packages'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/bin'
+[0.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.ps1'
+[0.968s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.dsv'
+[0.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.sh'
+[0.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.bash'
+[0.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.zsh'
+[0.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/configuration/share/colcon-core/packages/configuration)
+[1.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/my_planner
+[1.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/planner
+[1.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(configuration)
+[1.053s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration' for CMake module files
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration' for CMake config files
+[1.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('configuration', 'cmake_prefix_path')
+[1.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/configuration/share/configuration/hook/cmake_prefix_path.ps1'
+[1.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/configuration/share/configuration/hook/cmake_prefix_path.dsv'
+[1.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/configuration/share/configuration/hook/cmake_prefix_path.sh'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/bin'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/lib/pkgconfig/configuration.pc'
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/lib/python3.10/site-packages'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/configuration/bin'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.ps1'
+[1.070s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.dsv'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.sh'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.bash'
+[1.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/configuration/share/configuration/package.zsh'
+[1.078s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/configuration/share/colcon-core/packages/configuration)
+[1.079s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zeeshan/ros2_ws/src/simple_planner' with build type 'ament_cmake'
+[1.079s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zeeshan/ros2_ws/src/simple_planner'
+[1.080s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.081s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_planner)
+[1.090s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner' for CMake module files
+[1.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/my_planner
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner' for CMake config files
+[1.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_planner', 'cmake_prefix_path')
+[1.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/hook/cmake_prefix_path.ps1'
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/hook/cmake_prefix_path.dsv'
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/hook/cmake_prefix_path.sh'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/lib'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/bin'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/lib/pkgconfig/my_planner.pc'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/lib/python3.10/site-packages'
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/bin'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.ps1'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.dsv'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.sh'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.bash'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.zsh'
+[1.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/my_planner/share/colcon-core/packages/my_planner)
+[1.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/Stage' returned '0': /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/Stage -- -j4 -l4
+[1.119s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(planner)
+[1.120s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner' for CMake module files
+[1.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/simple_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4
+[1.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/planner
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner' for CMake config files
+[1.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('planner', 'cmake_prefix_path')
+[1.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/planner/share/planner/hook/cmake_prefix_path.ps1'
+[1.127s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/planner/share/planner/hook/cmake_prefix_path.dsv'
+[1.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/planner/share/planner/hook/cmake_prefix_path.sh'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/lib'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/bin'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/lib/pkgconfig/planner.pc'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/lib/python3.10/site-packages'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/bin'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.ps1'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/planner/share/planner/package.dsv'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.sh'
+[1.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.bash'
+[1.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.zsh'
+[1.139s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/planner/share/colcon-core/packages/planner)
+[1.189s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_planner)
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner' for CMake module files
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner' for CMake config files
+[1.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_planner', 'cmake_prefix_path')
+[1.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/hook/cmake_prefix_path.ps1'
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/hook/cmake_prefix_path.dsv'
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/hook/cmake_prefix_path.sh'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/lib'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/bin'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/lib/pkgconfig/my_planner.pc'
+[1.198s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/lib/python3.10/site-packages'
+[1.198s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/my_planner/bin'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.ps1'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.dsv'
+[1.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.sh'
+[1.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.bash'
+[1.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.zsh'
+[1.205s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/my_planner/share/colcon-core/packages/my_planner)
+[1.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/Stage': /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/Stage
+[1.209s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zeeshan/ros2_ws/src/worlds' with build type 'ament_cmake'
+[1.210s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zeeshan/ros2_ws/src/worlds'
+[1.211s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.211s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(planner)
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner' for CMake module files
+[1.224s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner' for CMake config files
+[1.225s] Level 1:colcon.colcon_core.shell:create_environment_hook('planner', 'cmake_prefix_path')
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/planner/share/planner/hook/cmake_prefix_path.ps1'
+[1.228s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/planner/share/planner/hook/cmake_prefix_path.dsv'
+[1.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/planner/share/planner/hook/cmake_prefix_path.sh'
+[1.230s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/lib'
+[1.231s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/bin'
+[1.231s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/lib/pkgconfig/planner.pc'
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/lib/python3.10/site-packages'
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/planner/bin'
+[1.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.ps1'
+[1.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/planner/share/planner/package.dsv'
+[1.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.sh'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.bash'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/planner/share/planner/package.zsh'
+[1.254s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/planner/share/colcon-core/packages/planner)
+[1.287s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Stage)
+[1.288s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/Stage' for CMake module files
+[1.290s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/Stage' for CMake config files
+[1.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/worlds -- -j4 -l4
+[1.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/Stage' returned '0': /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/Stage
+[1.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'cmake_prefix_path')
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/cmake_prefix_path.ps1'
+[1.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/cmake_prefix_path.dsv'
+[1.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/cmake_prefix_path.sh'
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/Stage/lib'
+[1.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'ld_library_path_lib')
+[1.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/ld_library_path_lib.ps1'
+[1.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/ld_library_path_lib.dsv'
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/ld_library_path_lib.sh'
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/Stage/bin'
+[1.318s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'path')
+[1.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/path.ps1'
+[1.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/path.dsv'
+[1.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/path.sh'
+[1.321s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/Stage/lib/pkgconfig/Stage.pc'
+[1.322s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/Stage/lib/python3.10/site-packages'
+[1.322s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/Stage/bin'
+[1.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('Stage', 'pythonscriptspath')
+[1.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/pythonscriptspath.ps1'
+[1.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/pythonscriptspath.dsv'
+[1.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/Stage/share/Stage/hook/pythonscriptspath.sh'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/Stage/share/Stage/package.ps1'
+[1.344s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/Stage/share/Stage/package.dsv'
+[1.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/Stage/share/Stage/package.sh'
+[1.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/Stage/share/Stage/package.bash'
+[1.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/Stage/share/Stage/package.zsh'
+[1.349s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/Stage/share/colcon-core/packages/Stage)
+[1.350s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zeeshan/ros2_ws/src/stage_ros2' with build type 'ament_cmake'
+[1.353s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zeeshan/ros2_ws/src/stage_ros2'
+[1.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/stage_ros2': CMAKE_PREFIX_PATH=/home/zeeshan/ros2_ws/install/Stage:/opt/ros/humble LD_LIBRARY_PATH=/home/zeeshan/ros2_ws/install/Stage/lib:${LD_LIBRARY_PATH} PATH=/home/zeeshan/ros2_ws/install/Stage/bin:${PATH} /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/stage_ros2 -- -j4 -l4
+[1.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/worlds -- -j4 -l4
+[1.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/worlds': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/worlds
+[1.794s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(worlds)
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds' for CMake module files
+[1.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/worlds
+[1.797s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds' for CMake config files
+[1.798s] Level 1:colcon.colcon_core.shell:create_environment_hook('worlds', 'cmake_prefix_path')
+[1.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/worlds/share/worlds/hook/cmake_prefix_path.ps1'
+[1.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/worlds/share/worlds/hook/cmake_prefix_path.dsv'
+[1.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/worlds/share/worlds/hook/cmake_prefix_path.sh'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/bin'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/lib/pkgconfig/worlds.pc'
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/lib/python3.10/site-packages'
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/bin'
+[1.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.ps1'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.dsv'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.sh'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.bash'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.zsh'
+[1.807s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/worlds/share/colcon-core/packages/worlds)
+[2.059s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(worlds)
+[2.060s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds' for CMake module files
+[2.061s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds' for CMake config files
+[2.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('worlds', 'cmake_prefix_path')
+[2.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/worlds/share/worlds/hook/cmake_prefix_path.ps1'
+[2.063s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/worlds/share/worlds/hook/cmake_prefix_path.dsv'
+[2.064s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/worlds/share/worlds/hook/cmake_prefix_path.sh'
+[2.066s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/bin'
+[2.066s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/lib/pkgconfig/worlds.pc'
+[2.067s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/lib/python3.10/site-packages'
+[2.067s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/worlds/bin'
+[2.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.ps1'
+[2.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.dsv'
+[2.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.sh'
+[2.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.bash'
+[2.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/worlds/share/worlds/package.zsh'
+[2.092s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/worlds/share/colcon-core/packages/worlds)
+[2.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/home/zeeshan/ros2_ws/install/Stage:/opt/ros/humble LD_LIBRARY_PATH=/home/zeeshan/ros2_ws/install/Stage/lib:${LD_LIBRARY_PATH} PATH=/home/zeeshan/ros2_ws/install/Stage/bin:${PATH} /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/stage_ros2 -- -j4 -l4
+[2.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zeeshan/ros2_ws/build/stage_ros2': CMAKE_PREFIX_PATH=/home/zeeshan/ros2_ws/install/Stage:/opt/ros/humble LD_LIBRARY_PATH=/home/zeeshan/ros2_ws/install/Stage/lib:${LD_LIBRARY_PATH} PATH=/home/zeeshan/ros2_ws/install/Stage/bin:${PATH} /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/stage_ros2
+[2.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stage_ros2)
+[2.687s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2' for CMake module files
+[2.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/home/zeeshan/ros2_ws/install/Stage:/opt/ros/humble LD_LIBRARY_PATH=/home/zeeshan/ros2_ws/install/Stage/lib:${LD_LIBRARY_PATH} PATH=/home/zeeshan/ros2_ws/install/Stage/bin:${PATH} /usr/bin/cmake --install /home/zeeshan/ros2_ws/build/stage_ros2
+[2.689s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2' for CMake config files
+[2.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'cmake_prefix_path')
+[2.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.ps1'
+[2.692s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.dsv'
+[2.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.sh'
+[2.695s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/lib'
+[2.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'ld_library_path_lib')
+[2.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.ps1'
+[2.697s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.dsv'
+[2.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.sh'
+[2.698s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/bin'
+[2.699s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/lib/pkgconfig/stage_ros2.pc'
+[2.710s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/lib/python3.10/site-packages'
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/bin'
+[2.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.ps1'
+[2.713s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.dsv'
+[2.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.sh'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.bash'
+[2.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.zsh'
+[2.718s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/stage_ros2/share/colcon-core/packages/stage_ros2)
+[3.215s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stage_ros2)
+[3.216s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2' for CMake module files
+[3.217s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2' for CMake config files
+[3.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'cmake_prefix_path')
+[3.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.ps1'
+[3.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.dsv'
+[3.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/cmake_prefix_path.sh'
+[3.224s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/lib'
+[3.225s] Level 1:colcon.colcon_core.shell:create_environment_hook('stage_ros2', 'ld_library_path_lib')
+[3.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.ps1'
+[3.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.dsv'
+[3.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/hook/ld_library_path_lib.sh'
+[3.238s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/bin'
+[3.238s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/lib/pkgconfig/stage_ros2.pc'
+[3.239s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/lib/python3.10/site-packages'
+[3.240s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/stage_ros2/bin'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.ps1'
+[3.246s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.dsv'
+[3.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.sh'
+[3.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.bash'
+[3.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.zsh'
+[3.259s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/stage_ros2/share/colcon-core/packages/stage_ros2)
+[22.333s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simple_planner)
+[22.333s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/simple_planner' for CMake module files
+[22.336s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/simple_planner' for CMake config files
+[22.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('simple_planner', 'cmake_prefix_path')
+[22.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/hook/cmake_prefix_path.ps1'
+[22.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/hook/cmake_prefix_path.dsv'
+[22.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/hook/cmake_prefix_path.sh'
+[22.346s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/simple_planner/lib'
+[22.346s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/simple_planner/bin'
+[22.346s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/simple_planner/lib/pkgconfig/simple_planner.pc'
+[22.347s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/simple_planner/lib/python3.10/site-packages'
+[22.347s] Level 1:colcon.colcon_core.environment:checking '/home/zeeshan/ros2_ws/install/simple_planner/bin'
+[22.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/package.ps1'
+[22.350s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/package.dsv'
+[22.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/package.sh'
+[22.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/package.bash'
+[22.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/zeeshan/ros2_ws/install/simple_planner/share/simple_planner/package.zsh'
+[22.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zeeshan/ros2_ws/install/simple_planner/share/colcon-core/packages/simple_planner)
+[49.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zeeshan/ros2_ws/build/simple_planner' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4
+[50.022s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[50.022s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[50.022s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[50.022s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[53.989s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[53.989s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[53.989s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[54.015s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[54.016s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zeeshan/ros2_ws/install/local_setup.ps1'
+[54.018s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zeeshan/ros2_ws/install/_local_setup_util_ps1.py'
+[54.021s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zeeshan/ros2_ws/install/setup.ps1'
+[54.023s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zeeshan/ros2_ws/install/local_setup.sh'
+[54.024s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zeeshan/ros2_ws/install/_local_setup_util_sh.py'
+[54.025s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zeeshan/ros2_ws/install/setup.sh'
+[54.027s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zeeshan/ros2_ws/install/local_setup.bash'
+[54.029s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zeeshan/ros2_ws/install/setup.bash'
+[54.031s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zeeshan/ros2_ws/install/local_setup.zsh'
+[54.032s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zeeshan/ros2_ws/install/setup.zsh'

@@ -1,0 +1,97 @@
+[0.020s] Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/my_planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/my_planner
+[0.134s] -- The C compiler identification is GNU 11.4.0
+[0.247s] -- The CXX compiler identification is GNU 11.4.0
+[0.260s] -- Detecting C compiler ABI info
+[0.389s] -- Detecting C compiler ABI info - done
+[0.405s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.405s] -- Detecting C compile features
+[0.406s] -- Detecting C compile features - done
+[0.412s] -- Detecting CXX compiler ABI info
+[0.569s] -- Detecting CXX compiler ABI info - done
+[0.586s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.586s] -- Detecting CXX compile features
+[0.587s] -- Detecting CXX compile features - done
+[0.592s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.530s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.699s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.776s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.785s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.802s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.832s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.878s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.037s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.042s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.233s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.279s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.368s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.386s] -- Looking for pthread.h
+[2.531s] -- Looking for pthread.h - found
+[2.532s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.674s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.676s] -- Found Threads: TRUE  
+[3.069s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.761s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.979s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.853s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.880s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.882s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.882s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.038s] -- Configuring done
+[5.065s] -- Generating done
+[5.069s] -- Build files have been written to: /home/zeeshan/ros2_ws/build/my_planner
+[5.091s] Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/my_planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/my_planner
+[5.093s] Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4
+[5.175s] [35m[1mConsolidate compiler generated dependencies of target planner_node[0m
+[5.211s] [ 20%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/planner_node.cpp.o[0m
+[10.647s] In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:8[m[K,
+[10.647s]                  from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:1[m[K:
+[10.647s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/astar.hpp:24:46:[m[K [01;31m[Kerror: [m[K‘[01m[KMap[m[K’ does not name a type
+[10.648s]    24 | std::vector<std::pair<int, int>> astar(const [01;31m[KMap[m[K& map, int start_x, int start_y, int goal_x, int goal_y);
+[10.648s]       |                                              [01;31m[K^~~[m[K
+[10.674s] In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:1[m[K:
+[10.674s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:24:19:[m[K [01;31m[Kerror: [m[K‘[01m[KMap[m[K’ was not declared in this scope
+[10.674s]    24 |   std::shared_ptr<[01;31m[KMap[m[K> map_;
+[10.675s]       |                   [01;31m[K^~~[m[K
+[10.675s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:24:22:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[10.675s]    24 |   std::shared_ptr<Map[01;31m[K>[m[K map_;
+[10.675s]       |                      [01;31m[K^[m[K
+[10.721s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kvoid PlannerNode::plan()[m[K’:
+[10.721s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:22:27:[m[K [01;31m[Kerror: [m[K‘[01m[KMap[m[K’ was not declared in this scope
+[10.721s]    22 |   map_ = std::make_shared<[01;31m[KMap[m[K>(20, 20);
+[10.722s]       |                           [01;31m[K^~~[m[K
+[10.722s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:22:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(int, int)[m[K’
+[10.722s]    22 |   map_ = [01;31m[Kstd::make_shared<Map>(20, 20)[m[K;
+[10.722s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[10.722s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[10.722s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[10.722s]                  from [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:4[m[K,
+[10.723s]                  from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:1[m[K:
+[10.723s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[10.723s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[10.723s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[10.723s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.723s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:22:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[10.723s]    22 |   map_ = [01;31m[Kstd::make_shared<Map>(20, 20)[m[K;
+[10.724s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[10.724s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:23:7:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[10.724s]    23 |   map_[01;31m[K->[m[KaddObstacle(5, 5);
+[10.724s]       |       [01;31m[K^~[m[K
+[10.724s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:24:7:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[10.724s]    24 |   map_[01;31m[K->[m[KaddObstacle(6, 5);
+[10.724s]       |       [01;31m[K^~[m[K
+[10.724s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:25:7:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[10.725s]    25 |   map_[01;31m[K->[m[KaddObstacle(7, 5);
+[10.725s]       |       [01;31m[K^~[m[K
+[10.725s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:26:7:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[10.725s]    26 |   map_[01;31m[K->[m[KaddObstacle(8, 5);
+[10.725s]       |       [01;31m[K^~[m[K
+[10.725s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:33:17:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+[10.725s]    33 |   path_ = astar([01;31m[K*map_[m[K, start_x_, start_y_, goal_x_, goal_y_);
+[10.726s]       |                 [01;31m[K^~~~~[m[K
+[10.726s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:35:18:[m[K [01;31m[Kerror: [m[K‘[01m[KVisualizer[m[K’ has not been declared
+[10.726s]    35 |   auto markers = [01;31m[KVisualizer[m[K::createPathMarkers(path_);
+[10.726s]       |                  [01;31m[K^~~~~~~~~~[m[K
+[12.703s] gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:76: CMakeFiles/planner_node.dir/src/planner_node.cpp.o] Error 1
+[12.703s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+[12.704s] gmake: *** [Makefile:146: all] Error 2
+[12.707s] Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4

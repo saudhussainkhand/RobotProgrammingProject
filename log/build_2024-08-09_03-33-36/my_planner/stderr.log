@@ -1,0 +1,91 @@
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:9:1:[m[K [01;31m[Kerror: [m[K‘[01m[KPlannerNode[m[K’ does not name a type
+    9 | [01;31m[KPlannerNode[m[K::PlannerNode() : Node("planner_node"), current_index_(0)
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:20:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPlannerNode[m[K’ has not been declared
+   20 | void [01;31m[KPlannerNode[m[K::plan()
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In function ‘[01m[Kvoid plan()[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:22:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+   22 |   [01;31m[Kmap_[m[K = std::make_shared<Map>(20, 20);
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:22:27:[m[K [01;31m[Kerror: [m[K‘[01m[KMap[m[K’ was not declared in this scope
+   22 |   map_ = std::make_shared<[01;31m[KMap[m[K>(20, 20);
+      |                           [01;31m[K^~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:22:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(int, int)[m[K’
+   22 |   map_ = [01;31m[Kstd::make_shared<Map>(20, 20)[m[K;
+      |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:10[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:3[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:22:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |   map_ = [01;31m[Kstd::make_shared<Map>(20, 20)[m[K;
+      |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_x_[m[K’ was not declared in this scope
+   28 |   [01;31m[Kstart_x_[m[K = 0;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_y_[m[K’ was not declared in this scope
+   29 |   [01;31m[Kstart_y_[m[K = 0;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:30:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_x_[m[K’ was not declared in this scope
+   30 |   [01;31m[Kgoal_x_[m[K = 15;
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:31:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_y_[m[K’ was not declared in this scope
+   31 |   [01;31m[Kgoal_y_[m[K = 15;
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:33:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_[m[K’ was not declared in this scope
+   33 |   [01;31m[Kpath_[m[K = astar(*map_, start_x_, start_y_, goal_x_, goal_y_);
+      |   [01;31m[K^~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:33:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kastar[m[K’ was not declared in this scope
+   33 |   path_ = [01;31m[Kastar[m[K(*map_, start_x_, start_y_, goal_x_, goal_y_);
+      |           [01;31m[K^~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:35:18:[m[K [01;31m[Kerror: [m[K‘[01m[KVisualizer[m[K’ has not been declared
+   35 |   auto markers = [01;31m[KVisualizer[m[K::createPathMarkers(path_);
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:36:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   36 |   [01;31m[Kmarker_publisher_[m[K->publish(markers);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |   [32m[Krmw_publisher_t[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K At global scope:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:39:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPlannerNode[m[K’ has not been declared
+   39 | void [01;31m[KPlannerNode[m[K::updateRobotPosition()
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In function ‘[01m[Kvoid updateRobotPosition()[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:41:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_index_[m[K’ was not declared in this scope
+   41 |   if ([01;31m[Kcurrent_index_[m[K < path_.size())
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:41:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_[m[K’ was not declared in this scope
+   41 |   if (current_index_ < [01;31m[Kpath_[m[K.size())
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:45:31:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   45 |     robot_pose.header.stamp = [01;31m[Kthis[m[K->get_clock()->now();
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   51 |     [01;31m[Krobot_publisher_[m[K->publish(robot_pose);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_publisher_t[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:59:32:[m[K [01;31m[Kerror: [m[K‘[01m[KPlannerNode[m[K’ was not declared in this scope
+   59 |   auto node = std::make_shared<[01;31m[KPlannerNode[m[K>();
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:59:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   59 |   auto node = [01;31m[Kstd::make_shared<PlannerNode>()[m[K;
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:10[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:3[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:59:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   59 |   auto node = [01;31m[Kstd::make_shared<PlannerNode>()[m[K;
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:76: CMakeFiles/planner_node.dir/src/planner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

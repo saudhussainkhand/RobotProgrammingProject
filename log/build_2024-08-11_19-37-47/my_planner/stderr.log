@@ -1,0 +1,103 @@
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:6:16:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+    6 | Map::Map(const [01;31m[Knav_msgs[m[K::msg::OccupancyGrid::SharedPtr grid)
+      |                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:6:29:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+    6 | Map::Map(const nav_msgs::msg[01;31m[K::[m[KOccupancyGrid::SharedPtr grid)
+      |                             [01;31m[K^~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:6:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+    6 | Map::Map[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOccupancyGrid::SharedPtr grid)
+      |         [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                             [32m[K)[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:6:29:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+    6 | Map::Map(const nav_msgs::msg[01;31m[K::[m[KOccupancyGrid::SharedPtr grid)
+      |                             [01;31m[K^~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:[m[K In member function ‘[01m[Kbool Map::isOccupied(int, int) const[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:28:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_data_[m[K’ was not declared in this scope
+   28 |     return [01;31m[Kmap_data_[m[K[y][x] > 50;  // Consider cells with value > 50 as occupied
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:[m[K At global scope:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.cpp:31:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMarkerArray[m[K’ in namespace ‘[01m[Kvisualization_msgs::msg[m[K’ does not name a type
+   31 | visualization_msgs::msg::[01;31m[KMarkerArray[m[K Map::createObstacleMarkers() const
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:90: CMakeFiles/planner_node.dir/src/map.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kvoid PlannerNode::plan()[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:55:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KcreateObstacleMarkers[m[K’
+   55 |     auto obstacle_markers = map_->[01;31m[KcreateObstacleMarkers[m[K();
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:62:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KVisualizer::createPathMarkers(std::vector<std::pair<int, int> >&)[m[K’
+   62 |     auto path_markers = [01;31m[KVisualizer::createPathMarkers(path_)[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:10[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/visualizer.hpp:10:49:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic visualization_msgs::msg::MarkerArray Visualizer::createPathMarkers(const std::vector<std::pair<int, int> >&, float, float, float)[m[K’
+   10 |     static visualization_msgs::msg::MarkerArray [01;36m[KcreatePathMarkers[m[K(const std::vector<std::pair<int, int>>& path, float r, float g, float b);
+      |                                                 [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/visualizer.hpp:10:49:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kvoid PlannerNode::goalCallback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:87:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetOriginX[m[K’
+   87 |    goal_x_ = static_cast<int>((msg->pose.position.x - map_->[01;31m[KgetOriginX[m[K()) / map_->getResolution());
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:87:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetResolution[m[K’
+   87 | st<int>((msg->pose.position.x - map_->getOriginX()) / map_->[01;31m[KgetResolution[m[K());
+      |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:88:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetOriginY[m[K’
+   88 |    goal_y_ = static_cast<int>((msg->pose.position.y - map_->[01;31m[KgetOriginY[m[K()) / map_->getResolution());
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:88:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetResolution[m[K’
+   88 | st<int>((msg->pose.position.y - map_->getOriginY()) / map_->[01;31m[KgetResolution[m[K());
+      |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kvoid PlannerNode::startPoseCallback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:100:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetOriginX[m[K’
+  100 |   start_x_ = static_cast<int>((msg->pose.position.x - map_->[01;31m[KgetOriginX[m[K()) / map_->getResolution());
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:100:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetResolution[m[K’
+  100 | st<int>((msg->pose.position.x - map_->getOriginX()) / map_->[01;31m[KgetResolution[m[K());
+      |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:101:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetOriginY[m[K’
+  101 |   start_y_ = static_cast<int>((msg->pose.position.y - map_->[01;31m[KgetOriginY[m[K()) / map_->getResolution());
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:101:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class Map[m[K’ {aka ‘[01m[Kclass Map[m[K’} has no member named ‘[01m[KgetResolution[m[K’
+  101 | st<int>((msg->pose.position.y - map_->getOriginY()) / map_->[01;31m[KgetResolution[m[K());
+      |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:4[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Map; _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}; _Tp = Map][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Map; _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}; _Tp = Map; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Map>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}; _Tp = Map; _Alloc = std::allocator<Map>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Map; _Alloc = std::allocator<Map>; _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Map>; _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}; _Tp = Map; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Map>; _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}; _Tp = Map][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Map; _Alloc = std::allocator<Map>; _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Map; _Args = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&}][m[K’
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:32:33:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMap::Map(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&)[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/include/planner_node.hpp:8[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/planner_node.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/map.hpp:9:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMap::Map(int, int)[m[K’
+    9 |     [01;36m[KMap[m[K(int width, int height);
+      |     [01;36m[K^~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/map.hpp:9:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/map.hpp:6:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMap::Map(const Map&)[m[K’
+    6 | class [01;36m[KMap[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/map.hpp:6:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst Map&[m[K’
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/map.hpp:6:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMap::Map(Map&&)[m[K’
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/include/map.hpp:6:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >[m[K’ to ‘[01m[KMap&&[m[K’
+gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:76: CMakeFiles/planner_node.dir/src/planner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

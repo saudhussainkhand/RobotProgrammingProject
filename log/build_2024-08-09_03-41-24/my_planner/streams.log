@@ -1,0 +1,59 @@
+[0.019s] Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/my_planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/my_planner
+[0.133s] -- The C compiler identification is GNU 11.4.0
+[0.244s] -- The CXX compiler identification is GNU 11.4.0
+[0.257s] -- Detecting C compiler ABI info
+[0.388s] -- Detecting C compiler ABI info - done
+[0.404s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.405s] -- Detecting C compile features
+[0.406s] -- Detecting C compile features - done
+[0.412s] -- Detecting CXX compiler ABI info
+[0.567s] -- Detecting CXX compiler ABI info - done
+[0.585s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.585s] -- Detecting CXX compile features
+[0.586s] -- Detecting CXX compile features - done
+[0.590s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.482s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.651s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.729s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.739s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.756s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.785s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.826s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.981s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.985s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.176s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.224s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.312s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.331s] -- Looking for pthread.h
+[2.472s] -- Looking for pthread.h - found
+[2.472s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.614s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.616s] -- Found Threads: TRUE  
+[3.007s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.691s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.907s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.774s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.801s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.803s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.803s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.961s] -- Configuring done
+[4.988s] -- Generating done
+[4.991s] -- Build files have been written to: /home/zeeshan/ros2_ws/build/my_planner
+[5.012s] Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/my_planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/my_planner
+[5.016s] Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4
+[5.098s] [35m[1mConsolidate compiler generated dependencies of target planner_node[0m
+[5.136s] [ 20%] [32m[1mLinking CXX executable planner_node[0m
+[5.747s] /usr/bin/ld: CMakeFiles/planner_node.dir/src/planner_node.cpp.o: in function `PlannerNode::plan()':
+[5.747s] planner_node.cpp:(.text+0x64b): undefined reference to `Map::addObstacle(int, int)'
+[5.747s] /usr/bin/ld: planner_node.cpp:(.text+0x66f): undefined reference to `Map::addObstacle(int, int)'
+[5.748s] /usr/bin/ld: planner_node.cpp:(.text+0x693): undefined reference to `Map::addObstacle(int, int)'
+[5.748s] /usr/bin/ld: planner_node.cpp:(.text+0x6b7): undefined reference to `Map::addObstacle(int, int)'
+[5.748s] /usr/bin/ld: planner_node.cpp:(.text+0x746): undefined reference to `astar(Map const&, int, int, int, int)'
+[5.749s] /usr/bin/ld: planner_node.cpp:(.text+0x786): undefined reference to `Visualizer::createPathMarkers(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&)'
+[5.755s] /usr/bin/ld: CMakeFiles/planner_node.dir/src/planner_node.cpp.o: in function `void __gnu_cxx::new_allocator<Map>::construct<Map, int, int>(Map*, int&&, int&&)':
+[5.755s] planner_node.cpp:(.text._ZN9__gnu_cxx13new_allocatorI3MapE9constructIS1_JiiEEEvPT_DpOT0_[_ZN9__gnu_cxx13new_allocatorI3MapE9constructIS1_JiiEEEvPT_DpOT0_]+0x5f): undefined reference to `Map::Map(int, int)'
+[5.805s] collect2: error: ld returned 1 exit status
+[5.808s] gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:270: planner_node] Error 1
+[5.808s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+[5.808s] gmake: *** [Makefile:146: all] Error 2
+[5.812s] Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4

@@ -1,0 +1,99 @@
+[0.019s] Invoking command in '/home/zeeshan/ros2_ws/build/planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/planner
+[0.127s] -- The C compiler identification is GNU 11.4.0
+[0.241s] -- The CXX compiler identification is GNU 11.4.0
+[0.254s] -- Detecting C compiler ABI info
+[0.388s] -- Detecting C compiler ABI info - done
+[0.404s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.404s] -- Detecting C compile features
+[0.405s] -- Detecting C compile features - done
+[0.411s] -- Detecting CXX compiler ABI info
+[0.558s] -- Detecting CXX compiler ABI info - done
+[0.574s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.575s] -- Detecting CXX compile features
+[0.576s] -- Detecting CXX compile features - done
+[0.581s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.450s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.629s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.720s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.730s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.749s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.781s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.824s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.987s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.992s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.184s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.229s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.314s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.334s] -- Looking for pthread.h
+[2.478s] -- Looking for pthread.h - found
+[2.478s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.616s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.618s] -- Found Threads: TRUE  
+[3.014s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.334s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.548s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.984s] -- Configuring done
+[4.004s] -- Generating done
+[4.007s] -- Build files have been written to: /home/zeeshan/ros2_ws/build/planner
+[4.024s] Invoked command in '/home/zeeshan/ros2_ws/build/planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/planner
+[4.029s] Invoking command in '/home/zeeshan/ros2_ws/build/planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/planner -- -j4 -l4
+[4.126s] [ 50%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/planner_node.cpp.o[0m
+[9.785s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kvoid SimplePlanner::compute_path()[m[K’:
+[9.785s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:47:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass SimplePlanner[m[K’ has no member named ‘[01m[Kget_position[m[K’
+[9.785s]    47 |         int start_x = (int)((this->[01;31m[Kget_position[m[K().x - map_.info.origin.position.x) / map_.info.resolution);
+[9.785s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[9.785s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:48:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass SimplePlanner[m[K’ has no member named ‘[01m[Kget_position[m[K’
+[9.786s]    48 |         int start_y = (int)((this->[01;31m[Kget_position[m[K().y - map_.info.origin.position.y) / map_.info.resolution);
+[9.786s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[9.841s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:[m[K In member function ‘[01m[Kstd::vector<Point> SimplePlanner::find_path(int, int, int, int)[m[K’:
+[9.841s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:68:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kthe[m[K’ has not been declared
+[9.841s]    68 |                 [&](const Point& lhs, [01;31m[Kthe[m[K Point& rhs) {
+[9.841s]       |                                       [01;31m[K^~~[m[K
+[9.842s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:68:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K&[m[K’ token
+[9.842s]    68 |                 [&](const Point& lhs, the Point[01;31m[K&[m[K rhs) {
+[9.842s]       |                                                [01;31m[K^[m[K
+[9.853s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:[m[K In lambda function:
+[9.853s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:69:63:[m[K [01;31m[Kerror: [m[K‘[01m[Krhs[m[K’ was not declared in this scope; did you mean ‘[01m[Klhs[m[K’?
+[9.853s]    69 |                   return f_score[{lhs.x, lhs.y}] < f_score[{[01;31m[Krhs[m[K.x, rhs.y}];
+[9.853s]       |                                                             [01;31m[K^~~[m[K
+[9.854s]       |                                                             [32m[Klhs[m[K
+[9.854s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:69:61:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kstd::map<std::pair<int, int>, double>[m[K’ and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+[9.854s]    69 |                     return f_score[{lhs.x, lhs.y}] < f_score[01;31m[K[[m[K{rhs.x, rhs.y}];
+[9.854s]       |                                                             [01;31m[K^[m[K
+[9.854s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[9.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[9.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[9.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[9.855s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[9.855s]                  from [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:1[m[K:
+[9.855s] [01m[K/usr/include/c++/11/bits/stl_map.h:492:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::pair<int, int>; _Tp = double; _Compare = std::less<std::pair<int, int> >; _Alloc = std::allocator<std::pair<const std::pair<int, int>, double> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = double; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::pair<int, int>][m[K’
+[9.855s]   492 |       [01;36m[Koperator[m[K[](const key_type& __k)
+[9.856s]       |       [01;36m[K^~~~~~~~[m[K
+[9.856s] [01m[K/usr/include/c++/11/bits/stl_map.h:492:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst key_type&[m[K’ {aka ‘[01m[Kconst std::pair<int, int>&[m[K’}
+[9.856s]   492 |       operator[]([01;36m[Kconst key_type& __k[m[K)
+[9.856s]       |                  [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[9.856s] [01m[K/usr/include/c++/11/bits/stl_map.h:512:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = std::pair<int, int>; _Tp = double; _Compare = std::less<std::pair<int, int> >; _Alloc = std::allocator<std::pair<const std::pair<int, int>, double> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = double; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::pair<int, int>][m[K’
+[9.856s]   512 |       [01;36m[Koperator[m[K[](key_type&& __k)
+[9.856s]       |       [01;36m[K^~~~~~~~[m[K
+[9.857s] [01m[K/usr/include/c++/11/bits/stl_map.h:512:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::map<std::pair<int, int>, double>::key_type&&[m[K’ {aka ‘[01m[Kstd::pair<int, int>&&[m[K’}
+[9.857s]   512 |       operator[]([01;36m[Kkey_type&& __k[m[K)
+[9.857s]       |                  [01;36m[K~~~~~~~~~~~^~~[m[K
+[10.681s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:71[m[K,
+[10.681s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[10.681s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[10.681s]                  from [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:1[m[K:
+[10.682s] /usr/include/c++/11/bits/predefined_ops.h: In instantiation of ‘[01m[Kconstexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = std::_Rb_tree_const_iterator<Point>; _Iterator2 = std::_Rb_tree_const_iterator<Point>; _Compare = SimplePlanner::find_path(int, int, int, int)::<lambda(const Point&, int)>][m[K’:
+[10.682s] [01m[K/usr/include/c++/11/bits/stl_algo.h:5624:12:[m[K   required from ‘[01m[Kconstexpr _ForwardIterator std::__min_element(_ForwardIterator, _ForwardIterator, _Compare) [with _ForwardIterator = std::_Rb_tree_const_iterator<Point>; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<SimplePlanner::find_path(int, int, int, int)::<lambda(const Point&, int)> >][m[K’
+[10.682s] [01m[K/usr/include/c++/11/bits/stl_algo.h:5675:43:[m[K   required from ‘[01m[Kconstexpr _FIter std::min_element(_FIter, _FIter, _Compare) [with _FIter = std::_Rb_tree_const_iterator<Point>; _Compare = SimplePlanner::find_path(int, int, int, int)::<lambda(const Point&, int)>][m[K’
+[10.682s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:67:49:[m[K   required from here
+[10.682s] [01m[K/usr/include/c++/11/bits/predefined_ops.h:158:30:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(SimplePlanner::find_path(int, int, int, int)::<lambda(const Point&, int)>) (const Point&, const Point&)[m[K’
+[10.682s]   158 |         { return bool([01;31m[K_M_comp(*__it1, *__it2)[m[K); }
+[10.683s]       |                       [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[10.683s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:68:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSimplePlanner::find_path(int, int, int, int)::<lambda(const Point&, int)>[m[K’
+[10.683s]    68 |                 [01;36m[K[[m[K&](const Point& lhs, the Point& rhs) {
+[10.683s]       |                 [01;36m[K^[m[K
+[10.683s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:68:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kint[m[K’
+[17.408s] gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:76: CMakeFiles/planner_node.dir/src/planner_node.cpp.o] Error 1
+[17.409s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+[17.409s] gmake: *** [Makefile:146: all] Error 2
+[17.413s] Invoked command in '/home/zeeshan/ros2_ws/build/planner' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/planner -- -j4 -l4

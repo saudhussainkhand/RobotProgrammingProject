@@ -1,0 +1,13 @@
+/usr/bin/ld: CMakeFiles/planner_node.dir/src/planner_node.cpp.o: in function `PlannerNode::plan()':
+planner_node.cpp:(.text+0x64b): undefined reference to `Map::addObstacle(int, int)'
+/usr/bin/ld: planner_node.cpp:(.text+0x66f): undefined reference to `Map::addObstacle(int, int)'
+/usr/bin/ld: planner_node.cpp:(.text+0x693): undefined reference to `Map::addObstacle(int, int)'
+/usr/bin/ld: planner_node.cpp:(.text+0x6b7): undefined reference to `Map::addObstacle(int, int)'
+/usr/bin/ld: planner_node.cpp:(.text+0x746): undefined reference to `astar(Map const&, int, int, int, int)'
+/usr/bin/ld: planner_node.cpp:(.text+0x786): undefined reference to `Visualizer::createPathMarkers(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&)'
+/usr/bin/ld: CMakeFiles/planner_node.dir/src/planner_node.cpp.o: in function `void __gnu_cxx::new_allocator<Map>::construct<Map, int, int>(Map*, int&&, int&&)':
+planner_node.cpp:(.text._ZN9__gnu_cxx13new_allocatorI3MapE9constructIS1_JiiEEEvPT_DpOT0_[_ZN9__gnu_cxx13new_allocatorI3MapE9constructIS1_JiiEEEvPT_DpOT0_]+0x5f): undefined reference to `Map::Map(int, int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:270: planner_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

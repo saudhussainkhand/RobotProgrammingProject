@@ -1,0 +1,22 @@
+[0.073s] Invoking command in '/home/zeeshan/ros2_ws/build/simple_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4
+[0.227s] [35m[1mConsolidate compiler generated dependencies of target simple_planner[0m
+[0.298s] [ 20%] [32mBuilding CXX object CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o[0m
+[9.533s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:[m[K In member function ‘[01m[Kvoid SimplePlanner::reset_covariance()[m[K’:
+[9.535s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:84:69:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} and ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >::_translation_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’})
+[9.536s]    84 |     initial_pose.pose.pose.position = robot_pose_.transform.[01;31m[Ktranslation[m[K;
+[9.537s]       |                                                             [01;31m[K^~~~~~~~~~~[m[K
+[9.537s] 
+[9.539s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+[9.540s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:22[m[K,
+[9.541s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+[9.542s]                  from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:6[m[K:
+[9.543s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >& geometry_msgs::msg::Point_<std::allocator<void> >::operator=(const geometry_msgs::msg::Point_<std::allocator<void> >&)[m[K’
+[9.544s]    32 | struct [01;36m[KPoint_[m[K
+[9.545s]       |        [01;36m[K^~~~~~[m[K
+[9.546s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >::_translation_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’} to ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >&[m[K’
+[9.548s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >& geometry_msgs::msg::Point_<std::allocator<void> >::operator=(geometry_msgs::msg::Point_<std::allocator<void> >&&)[m[K’
+[9.549s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >::_translation_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >&&[m[K’
+[25.320s] gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:76: CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o] Error 1
+[25.320s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_planner.dir/all] Error 2
+[25.321s] gmake: *** [Makefile:146: all] Error 2
+[25.326s] Invoked command in '/home/zeeshan/ros2_ws/build/simple_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4

@@ -1,0 +1,12 @@
+[0.153s] Invoking command in '/home/zeeshan/ros2_ws/build/simple_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4
+[0.319s] [35m[1mConsolidate compiler generated dependencies of target simple_planner[0m
+[0.454s] [ 20%] [32mBuilding CXX object CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o[0m
+[13.139s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:[m[K In constructor ‘[01m[KSimplePlanner::SimplePlanner()[m[K’:
+[13.139s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:193:136:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_received_callback[m[K’ is not a member of ‘[01m[KSimplePlanner[m[K’
+[13.139s]   193 | id>("map", qos.transient_local(), std::bind(&SimplePlanner::[01;31m[Kmap_received_callback[m[K, this, std::placeholders::_1));
+[13.139s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[13.140s] 
+[25.660s] gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:76: CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o] Error 1
+[25.660s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_planner.dir/all] Error 2
+[25.660s] gmake: *** [Makefile:146: all] Error 2
+[25.664s] Invoked command in '/home/zeeshan/ros2_ws/build/simple_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4

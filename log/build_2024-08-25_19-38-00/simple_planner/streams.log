@@ -1,0 +1,20 @@
+[0.069s] Invoking command in '/home/zeeshan/ros2_ws/build/simple_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4
+[0.204s] [35m[1mConsolidate compiler generated dependencies of target simple_planner[0m
+[0.278s] [ 20%] [32mBuilding CXX object CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o[0m
+[43.108s] [ 40%] [32mBuilding CXX object CMakeFiles/simple_planner.dir/src/distance_map.cpp.o[0m
+[45.978s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:[m[K In function ‘[01m[Kcv::Mat planner::compute_distance_map(const OccupancyGrid&)[m[K’:
+[45.978s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:57:34:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[Kin_bounds(cv::Mat&, int&, int&)[m[K’ is ambiguous
+[45.978s]    57 |                     if ([01;31m[Kin_bounds(distance_map, n_row, n_col)[m[K && !visited[n_row][n_col]) {
+[45.978s]       |                         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[45.978s] In file included from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.hpp:5[m[K,
+[45.978s]                  from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:1[m[K:
+[45.979s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/utils.hpp:10:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool planner::in_bounds(cv::Mat, int, int)[m[K’
+[45.979s]    10 |     bool [01;36m[Kin_bounds[m[K(cv::Mat map, int row, int col);
+[45.979s]       |          [01;36m[K^~~~~~~~~[m[K
+[45.979s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:21:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool planner::in_bounds(const cv::Mat&, int, int)[m[K’
+[45.979s]    21 |     bool [01;36m[Kin_bounds[m[K(const cv::Mat& distance_map, int row, int col) {
+[45.979s]       |          [01;36m[K^~~~~~~~~[m[K
+[46.976s] gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:104: CMakeFiles/simple_planner.dir/src/distance_map.cpp.o] Error 1
+[46.978s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_planner.dir/all] Error 2
+[46.978s] gmake: *** [Makefile:146: all] Error 2
+[46.982s] Invoked command in '/home/zeeshan/ros2_ws/build/simple_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4

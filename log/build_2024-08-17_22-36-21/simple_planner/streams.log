@@ -1,0 +1,58 @@
+[0.053s] Invoking command in '/home/zeeshan/ros2_ws/build/simple_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4
+[0.206s] [ 20%] [32mBuilding CXX object CMakeFiles/simple_planner.dir/src/search.cpp.o[0m
+[0.212s] [ 40%] [32mBuilding CXX object CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o[0m
+[3.376s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:[m[K In function ‘[01m[Kplanner::Node planner::search(planner::Node&, planner::Node&, cv::Mat)[m[K’:
+[3.376s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:40:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ksave_explored_nodes[m[K’ was not declared in this scope
+[3.376s]    40 |                 [01;31m[Ksave_explored_nodes[m[K(distance_map, visited, root, *current);
+[3.376s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.390s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksave_explored_nodes[m[K’ was not declared in this scope
+[3.390s]    59 |         [01;31m[Ksave_explored_nodes[m[K(distance_map, visited, root, goal);
+[3.391s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.397s] gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:90: CMakeFiles/simple_planner.dir/src/search.cpp.o] Error 1
+[4.397s] gmake[2]: *** Waiting for unfinished jobs....
+[8.750s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:[m[K In member function ‘[01m[Kvoid SimplePlanner::goal_received_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.751s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:66:122:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kplanner::Node::Node(int&, int&, int, int&, int&, std::nullptr_t)[m[K’
+[8.751s]    66 | ot_col, 0, robot_vector_index, robot_closest_object_distance, nullptr[01;31m[K)[m[K;
+[8.751s]       |                                                                      [01;31m[K^[m[K
+[8.751s] 
+[8.751s] In file included from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:13[m[K:
+[8.752s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:20:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kplanner::Node::Node(int, int, int, int, int, int, planner::Node*)[m[K’
+[8.752s]    20 |             [01;36m[KNode[m[K(int row, int col, int steps, int vector_index, int closest_object_distance, int heuristic_cost, Node* parent = nullptr);
+[8.752s]       |             [01;36m[K^~~~[m[K
+[8.752s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:20:98:[m[K [01;36m[Knote: [m[K  no known conversion for argument 6 from ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kint[m[K’
+[8.752s]    20 | t steps, int vector_index, int closest_object_distance, [01;36m[Kint heuristic_cost[m[K, Node* parent = nullptr);
+[8.752s]       |                                                         [01;36m[K~~~~^~~~~~~~~~~~~~[m[K
+[8.753s] 
+[8.753s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:19:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kplanner::Node::Node()[m[K’
+[8.753s]    19 |             [01;36m[KNode[m[K();
+[8.753s]       |             [01;36m[K^~~~[m[K
+[8.753s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:19:13:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 6 provided
+[8.753s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr planner::Node::Node(const planner::Node&)[m[K’
+[8.753s]     9 |     class [01;36m[KNode[m[K {
+[8.753s]       |           [01;36m[K^~~~[m[K
+[8.754s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 6 provided
+[8.754s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr planner::Node::Node(planner::Node&&)[m[K’
+[8.754s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 6 provided
+[8.754s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:72:108:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kplanner::Node::Node(int&, int&, int, int&, int&)[m[K’
+[8.754s]    72 | al_row, goal_col, -1, goal_vector_index, goal_closest_object_distance[01;31m[K)[m[K;
+[8.754s]       |                                                                      [01;31m[K^[m[K
+[8.755s] 
+[8.755s] In file included from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:13[m[K:
+[8.755s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:20:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kplanner::Node::Node(int, int, int, int, int, int, planner::Node*)[m[K’
+[8.755s]    20 |             [01;36m[KNode[m[K(int row, int col, int steps, int vector_index, int closest_object_distance, int heuristic_cost, Node* parent = nullptr);
+[8.755s]       |             [01;36m[K^~~~[m[K
+[8.755s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:20:13:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 5 provided
+[8.755s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:19:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kplanner::Node::Node()[m[K’
+[8.755s]    19 |             [01;36m[KNode[m[K();
+[8.756s]       |             [01;36m[K^~~~[m[K
+[8.756s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:19:13:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 5 provided
+[8.756s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr planner::Node::Node(const planner::Node&)[m[K’
+[8.756s]     9 |     class [01;36m[KNode[m[K {
+[8.756s]       |           [01;36m[K^~~~[m[K
+[8.756s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+[8.756s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr planner::Node::Node(planner::Node&&)[m[K’
+[8.757s] [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:9:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+[17.647s] gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:76: CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o] Error 1
+[17.647s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_planner.dir/all] Error 2
+[17.648s] gmake: *** [Makefile:146: all] Error 2
+[17.651s] Invoked command in '/home/zeeshan/ros2_ws/build/simple_planner' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/simple_planner -- -j4 -l4

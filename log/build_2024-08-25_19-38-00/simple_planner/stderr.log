@@ -1,0 +1,15 @@
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:[m[K In function ‘[01m[Kcv::Mat planner::compute_distance_map(const OccupancyGrid&)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:57:34:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[Kin_bounds(cv::Mat&, int&, int&)[m[K’ is ambiguous
+   57 |                     if ([01;31m[Kin_bounds(distance_map, n_row, n_col)[m[K && !visited[n_row][n_col]) {
+      |                         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.hpp:5[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/utils.hpp:10:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool planner::in_bounds(cv::Mat, int, int)[m[K’
+   10 |     bool [01;36m[Kin_bounds[m[K(cv::Mat map, int row, int col);
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/distance_map.cpp:21:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool planner::in_bounds(const cv::Mat&, int, int)[m[K’
+   21 |     bool [01;36m[Kin_bounds[m[K(const cv::Mat& distance_map, int row, int col) {
+      |          [01;36m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:104: CMakeFiles/simple_planner.dir/src/distance_map.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_planner.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

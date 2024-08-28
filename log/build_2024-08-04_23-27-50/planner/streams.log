@@ -1,0 +1,40 @@
+[0.022s] Invoking command in '/home/zeeshan/ros2_ws/build/planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/planner -- -j4 -l4
+[0.071s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.323s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.379s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.384s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.396s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.422s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.456s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.589s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.591s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.813s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.194s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.505s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.071s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.981s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.011s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.014s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.014s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.173s] -- Configuring done
+[3.198s] -- Generating done
+[3.202s] -- Build files have been written to: /home/zeeshan/ros2_ws/build/planner
+[3.255s] [35m[1mConsolidate compiler generated dependencies of target planner_node[0m
+[3.292s] [ 50%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/planner_node.cpp.o[0m
+[3.867s] In file included from [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:6[m[K:
+[3.867s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[3.867s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[3.867s]       |  [01;35m[K^~~~~~~[m[K
+[9.551s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:[m[K In constructor ‘[01m[KPathPlanner::PathPlanner()[m[K’:
+[9.551s] [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:15:66:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::Buffer::Buffer()[m[K’
+[9.551s]    15 |     PathPlanner() : Node("path_planner"), tf_listener_(tf_buffer_[01;31m[K)[m[K {
+[9.551s]       |                                                                  [01;31m[K^[m[K
+[9.551s] In file included from [01m[K/home/zeeshan/ros2_ws/src/planner/src/planner_node.cpp:4[m[K:
+[9.552s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::Buffer::Buffer(rclcpp::Clock::SharedPtr, tf2::Duration, rclcpp::Node::SharedPtr)[m[K’
+[9.552s]    73 |   TF2_ROS_PUBLIC [01;36m[KBuffer[m[K(
+[9.552s]       |                  [01;36m[K^~~~~~[m[K
+[9.552s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[15.651s] gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:76: CMakeFiles/planner_node.dir/src/planner_node.cpp.o] Error 1
+[15.651s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+[15.651s] gmake: *** [Makefile:146: all] Error 2
+[15.654s] Invoked command in '/home/zeeshan/ros2_ws/build/planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/planner -- -j4 -l4
