@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "worlds")
 set(worlds_VERSION "0.0.0")
-set(worlds_MAINTAINER "silver <silverio.manganaro@gmail.com>")
+set(worlds_MAINTAINER "Saud Hussain <hussain.1990559@studenti.uniroma1.it>")
 set(worlds_BUILD_DEPENDS )
 set(worlds_BUILDTOOL_DEPENDS "ament_cmake")
 set(worlds_BUILD_EXPORT_DEPENDS )
