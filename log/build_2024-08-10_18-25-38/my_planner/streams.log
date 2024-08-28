@@ -1,0 +1,13 @@
+[0.025s] Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4
+[0.241s] [35m[1mConsolidate compiler generated dependencies of target planner_node[0m
+[0.333s] [ 20%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/visualizer.cpp.o[0m
+[0.334s] [ 40%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/planner_node.cpp.o[0m
+[1.734s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/visualizer.cpp:[m[K In static member function ‘[01m[Kstatic visualization_msgs::msg::MarkerArray Visualizer::createPathMarkers(const std::vector<std::pair<int, int> >&, float, float, float)[m[K’:
+[1.735s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/visualizer.cpp:11:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[1.736s]    11 |         marker.header.stamp = [01;31m[Krclcpp[m[K::Clock().now();
+[1.736s]       |                               [01;31m[K^~~~~~[m[K
+[1.939s] gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:118: CMakeFiles/planner_node.dir/src/visualizer.cpp.o] Error 1
+[1.940s] gmake[2]: *** Waiting for unfinished jobs....
+[19.950s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+[19.951s] gmake: *** [Makefile:146: all] Error 2
+[19.954s] Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4

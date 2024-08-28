@@ -1,0 +1,42 @@
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:[m[K In function ‘[01m[Kstd::vector<std::pair<int, int> > astar(const Map&, int, int, int, int)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:31:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::width_[m[K’ is private within this context
+   31 |     std::vector<std::vector<bool>> closed_set(map.[01;31m[Kwidth_[m[K, std::vector<bool>(map.height_, false));
+      |                                                   [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:14:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+   14 |     int [01;36m[Kwidth_[m[K;
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:31:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::height_[m[K’ is private within this context
+   31 |     std::vector<std::vector<bool>> closed_set(map.width_, std::vector<bool>(map.[01;31m[Kheight_[m[K, false));
+      |                                                                                 [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:15:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+   15 |     int [01;36m[Kheight_[m[K;
+      |         [01;36m[K^~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:65:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::width_[m[K’ is private within this context
+   65 |             if (nx >= 0 && nx < map.[01;31m[Kwidth_[m[K && ny >= 0 && ny < map.height_ && !closed_set[nx][ny] && !map.isOccupied(nx, ny))
+      |                                     [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:14:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+   14 |     int [01;36m[Kwidth_[m[K;
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:65:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::height_[m[K’ is private within this context
+   65 |             if (nx >= 0 && nx < map.width_ && ny >= 0 && ny < map.[01;31m[Kheight_[m[K && !closed_set[nx][ny] && !map.isOccupied(nx, ny))
+      |                                                                   [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:15:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+   15 |     int [01;36m[Kheight_[m[K;
+      |         [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:104: CMakeFiles/planner_node.dir/src/astar.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/visualizer.cpp:[m[K In static member function ‘[01m[Kstatic visualization_msgs::msg::MarkerArray Visualizer::createPathMarkers(const std::vector<std::pair<int, int> >&)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/my_planner/src/visualizer.cpp:12:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+   12 |         marker.header.stamp = [01;31m[Krclcpp[m[K::Clock().now();
+      |                               [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:118: CMakeFiles/planner_node.dir/src/visualizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,98 @@
+In file included from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:7[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:1[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/utils.hpp:13:83:[m[K [01;31m[Kerror: [m[K‘[01m[KNode[m[K’ has not been declared
+   13 |     void save_explored_nodes(cv::Mat map, std::vector<std::vector<bool>> visited, [01;31m[KNode[m[K root, Node goal);
+      |                                                                                   [01;31m[K^~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/utils.hpp:13:94:[m[K [01;31m[Kerror: [m[K‘[01m[KNode[m[K’ has not been declared
+   13 |     void save_explored_nodes(cv::Mat map, std::vector<std::vector<bool>> visited, Node root, [01;31m[KNode[m[K goal);
+      |                                                                                              [01;31m[K^~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:[m[K In function ‘[01m[Kplanner::Node planner::search(planner::Node&, planner::Node&, cv::Mat)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+   25 |         [01;31m[Kvector[m[K<pair<int, int>> movements = { {-1, 0}, {1, 0},  {0, -1}, {0, 1} };  // 4-way movement
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:25:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:4[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+  389 |     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+      |           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:4[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:1[m[K:
+[01m[K/usr/include/c++/11/vector:86:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::vector[m[K’
+   86 |       using [01;36m[Kvector[m[K = std::vector<_Tp, polymorphic_allocator<_Tp>>;
+      |             [01;36m[K^~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:25:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kpair[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::pair[m[K’?
+   25 |         vector<[01;31m[Kpair[m[K<int, int>> movements = { {-1, 0}, {1, 0},  {0, -1}, {0, 1} };  // 4-way movement
+      |                [01;31m[K^~~~[m[K
+      |                [32m[Kstd::pair[m[K
+In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/11/vector:60[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:4[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_pair.h:211:12:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::pair[m[K’ declared here
+  211 |     struct [01;36m[Kpair[m[K
+      |            [01;36m[K^~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:25:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+   25 |         vector<pair<[01;31m[Kint[m[K, int>> movements = { {-1, 0}, {1, 0},  {0, -1}, {0, 1} };  // 4-way movement
+      |                     [01;31m[K^~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpriority_queue[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::priority_queue[m[K’?
+   26 |         [01;31m[Kpriority_queue[m[K<Node*, vector<Node*>, NodeComparator> frontier;
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Kstd::priority_queue[m[K
+In file included from [01m[K/usr/include/c++/11/queue:64[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:46[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/util.hpp:119[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:50[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:86[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:5[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_queue.h:456:11:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::priority_queue[m[K’ declared here
+  456 |     class [01;36m[Kpriority_queue[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:28:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K*[m[K’ token
+   26 |         priority_queue<Node[01;31m[K*[m[K, vector<Node*>, NodeComparator> frontier;
+      |                            [01;31m[K^[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+   26 |         priority_queue<Node*[01;31m[K,[m[K vector<Node*>, NodeComparator> frontier;
+      |                             [01;31m[K^[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K*[m[K’ token
+   26 |         priority_queue<Node*, vector<Node[01;31m[K*[m[K>, NodeComparator> frontier;
+      |                                          [01;31m[K^[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:43:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   26 |         priority_queue<Node*, vector<Node*[01;31m[K>[m[K, NodeComparator> frontier;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+   26 |         priority_queue<Node*, vector<Node*>[01;31m[K,[m[K NodeComparator> frontier;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:60:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   26 |         priority_queue<Node*, vector<Node*>, NodeComparator[01;31m[K>[m[K frontier;
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:26:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kfrontier[m[K’ was not declared in this scope
+   26 |         priority_queue<Node*, vector<Node*>, NodeComparator> [01;31m[Kfrontier[m[K;
+      |                                                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:27:23:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kbool[m[K’
+   27 |         vector<vector<[01;31m[Kbool[m[K>> visited(distance_map.rows, vector<bool>(distance_map.cols, false));
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisited[m[K’ was not declared in this scope
+   31 |         [01;31m[Kvisited[m[K[root.row][root.col] = true;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.cpp:42:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmovements[m[K’ was not declared in this scope
+   42 |             for (const auto& move : [01;31m[Kmovements[m[K) {
+      |                                     [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:90: CMakeFiles/simple_planner.dir/src/search.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/search.hpp:7[m[K,
+                 from [01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:13[m[K:
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/utils.hpp:13:83:[m[K [01;31m[Kerror: [m[K‘[01m[KNode[m[K’ has not been declared
+   13 | _nodes(cv::Mat map, std::vector<std::vector<bool>> visited, [01;31m[KNode[m[K root, Node goal);
+      |                                                             [01;31m[K^~~~[m[K
+
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/utils.hpp:13:94:[m[K [01;31m[Kerror: [m[K‘[01m[KNode[m[K’ has not been declared
+   13 | Mat map, std::vector<std::vector<bool>> visited, Node root, [01;31m[KNode[m[K goal);
+      |                                                             [01;31m[K^~~~[m[K
+
+gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:76: CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_planner.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

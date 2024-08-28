@@ -1,0 +1,1505 @@
+[0.000000] (-) TimerEvent: {}
+[0.000361] (Stage) JobQueued: {'identifier': 'Stage', 'dependencies': OrderedDict()}
+[0.000432] (my_planner) JobQueued: {'identifier': 'my_planner', 'dependencies': OrderedDict()}
+[0.000481] (planner) JobQueued: {'identifier': 'planner', 'dependencies': OrderedDict()}
+[0.000524] (stage_ros2) JobQueued: {'identifier': 'stage_ros2', 'dependencies': OrderedDict([('Stage', '/home/zeeshan/ros2_ws/install/Stage')])}
+[0.000583] (Stage) JobStarted: {'identifier': 'Stage'}
+[0.010461] (my_planner) JobStarted: {'identifier': 'my_planner'}
+[0.017283] (planner) JobStarted: {'identifier': 'planner'}
+[0.027262] (Stage) JobProgress: {'identifier': 'Stage', 'progress': 'cmake'}
+[0.027784] (Stage) Command: {'cmd': ['/usr/bin/cmake', '/home/zeeshan/ros2_ws/src/Stage', '-DOpenGL_GL_PREFERENCE=LEGACY', '-DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/Stage'], 'cwd': '/home/zeeshan/ros2_ws/build/Stage', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/Stage'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.034699] (my_planner) JobProgress: {'identifier': 'my_planner', 'progress': 'cmake'}
+[0.038527] (my_planner) Command: {'cmd': ['/usr/bin/cmake', '/home/zeeshan/ros2_ws/src/my_planner', '-DOpenGL_GL_PREFERENCE=LEGACY', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/my_planner'], 'cwd': '/home/zeeshan/ros2_ws/build/my_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/my_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.047170] (planner) JobProgress: {'identifier': 'planner', 'progress': 'cmake'}
+[0.048470] (planner) JobProgress: {'identifier': 'planner', 'progress': 'build'}
+[0.050475] (planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zeeshan/ros2_ws/build/planner', '--', '-j4', '-l4'], 'cwd': '/home/zeeshan/ros2_ws/build/planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.053076] (Stage) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.054119] (Stage) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.054316] (Stage) StderrLine: {'line': b'  CMake.\n'}
+[0.054473] (Stage) StderrLine: {'line': b'\n'}
+[0.054628] (Stage) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.054781] (Stage) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.054937] (Stage) StderrLine: {'line': b'\n'}
+[0.055091] (Stage) StderrLine: {'line': b'\x1b[0m\n'}
+[0.065139] (my_planner) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098460] (-) TimerEvent: {}
+[0.180708] (planner) StdoutLine: {'line': b'[100%] Built target planner_node\n'}
+[0.184845] (Stage) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.198632] (-) TimerEvent: {}
+[0.204417] (planner) CommandEnded: {'returncode': 0}
+[0.257257] (planner) JobProgress: {'identifier': 'planner', 'progress': 'install'}
+[0.277914] (planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zeeshan/ros2_ws/build/planner'], 'cwd': '/home/zeeshan/ros2_ws/build/planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.296403] (planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.297814] (planner) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.298358] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/lib/planner/planner_node\n'}
+[0.298689] (-) TimerEvent: {}
+[0.319076] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/launch/planner_launch.py\n'}
+[0.344436] (Stage) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.352451] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/ament_index/resource_index/package_run_dependencies/planner\n'}
+[0.368502] (Stage) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.369159] (my_planner) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.378146] (my_planner) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.391752] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/ament_index/resource_index/parent_prefix_path/planner\n'}
+[0.398882] (-) TimerEvent: {}
+[0.419150] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/environment/ament_prefix_path.sh\n'}
+[0.441019] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/environment/ament_prefix_path.dsv\n'}
+[0.447993] (my_planner) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.455454] (my_planner) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.460936] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/environment/path.sh\n'}
+[0.469239] (my_planner) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.479053] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/environment/path.dsv\n'}
+[0.497651] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/local_setup.bash\n'}
+[0.498610] (my_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.499978] (-) TimerEvent: {}
+[0.518558] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/local_setup.sh\n'}
+[0.542052] (my_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.545569] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/local_setup.zsh\n'}
+[0.555732] (Stage) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.564513] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/local_setup.dsv\n'}
+[0.577189] (Stage) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.577636] (Stage) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.578414] (Stage) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.583014] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/package.dsv\n'}
+[0.585928] (Stage) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600153] (-) TimerEvent: {}
+[0.603657] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/ament_index/resource_index/packages/planner\n'}
+[0.620861] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/cmake/plannerConfig.cmake\n'}
+[0.640464] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/cmake/plannerConfig-version.cmake\n'}
+[0.660247] (planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/planner/share/planner/package.xml\n'}
+[0.684763] (planner) CommandEnded: {'returncode': 0}
+[0.690714] (my_planner) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.693680] (my_planner) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700268] (-) TimerEvent: {}
+[0.770114] (Stage) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.777686] (planner) JobEnded: {'identifier': 'planner', 'rc': 0}
+[0.790400] (Stage) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.791432] (Stage) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.792447] (Stage) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.794368] (Stage) StdoutLine: {'line': b'-- Stage version 4.3.0\n'}
+[0.794629] (Stage) StdoutLine: {'line': b'-- Operating system is Linux\n'}
+[0.794866] (Stage) StdoutLine: {'line': b'-- Installing Libraries to /home/zeeshan/ros2_ws/install/Stage/lib\n'}
+[0.795029] (Stage) StdoutLine: {'line': b'-- Installing Plugins to /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3\n'}
+[0.795239] (Stage) StdoutLine: {'line': b'-- Build type RELEASE\n'}
+[0.795577] (Stage) StdoutLine: {'line': b'-- Checking for libtool\n'}
+[0.800411] (-) TimerEvent: {}
+[0.813286] (Stage) StdoutLine: {'line': b'-- Checking for required libraries...\n'}
+[0.898549] (Stage) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[0.900520] (-) TimerEvent: {}
+[0.917203] (Stage) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[0.925158] (my_planner) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.951123] (Stage) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[0.961067] (Stage) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[1.000692] (-) TimerEvent: {}
+[1.101235] (-) TimerEvent: {}
+[1.156328] (Stage) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.157439] (Stage) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.201382] (-) TimerEvent: {}
+[1.301920] (-) TimerEvent: {}
+[1.313255] (Stage) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.313649] (Stage) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.327621] (my_planner) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.402068] (-) TimerEvent: {}
+[1.449575] (Stage) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.450005] (Stage) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.502234] (-) TimerEvent: {}
+[1.581773] (Stage) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.582193] (Stage) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.602395] (-) TimerEvent: {}
+[1.703119] (-) TimerEvent: {}
+[1.725931] (Stage) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.726264] (Stage) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.803294] (-) TimerEvent: {}
+[1.873219] (Stage) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.873552] (Stage) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.903469] (-) TimerEvent: {}
+[2.000765] (Stage) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.003498] (Stage) StdoutLine: {'line': b'-- Found FLTK: fltk_images;fltk_forms;fltk_gl;/usr/lib/x86_64-linux-gnu/libGL.so;fltk  \n'}
+[2.003740] (-) TimerEvent: {}
+[2.006961] (Stage) StdoutLine: {'line': b'-- Checking for optional libraries...\n'}
+[2.007848] (Stage) StdoutLine: {'line': b'-- Installation path CMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/Stage\n'}
+[2.009118] (Stage) StdoutLine: {'line': b'-- Configuring libstage\n'}
+[2.020343] (my_planner) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.025442] (Stage) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[2.026163] (Stage) StdoutLine: {'line': b"-- Checking for one of the modules 'playercore>=2.1.0'\n"}
+[2.031607] (Stage) StdoutLine: {'line': b'--   * Player not detected. If Player is installed but not detected, check your PKG_CONFIG_PATH.\n'}
+[2.058812] (Stage) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.103945] (-) TimerEvent: {}
+[2.134374] (Stage) StdoutLine: {'line': b'-- Generating done\n'}
+[2.139977] (Stage) StdoutLine: {'line': b'-- Build files have been written to: /home/zeeshan/ros2_ws/build/Stage\n'}
+[2.155053] (Stage) CommandEnded: {'returncode': 0}
+[2.156207] (Stage) JobProgress: {'identifier': 'Stage', 'progress': 'build'}
+[2.157849] (Stage) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zeeshan/ros2_ws/build/Stage', '--', '-j4', '-l4'], 'cwd': '/home/zeeshan/ros2_ws/build/Stage', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/Stage'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[2.204132] (-) TimerEvent: {}
+[2.237599] (my_planner) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.257540] (Stage) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/color.cc.o\x1b[0m\n'}
+[2.258350] (Stage) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/camera.cc.o\x1b[0m\n'}
+[2.262885] (Stage) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/block.cc.o\x1b[0m\n'}
+[2.273566] (Stage) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/blockgroup.cc.o\x1b[0m\n'}
+[2.304280] (-) TimerEvent: {}
+[2.405423] (-) TimerEvent: {}
+[2.506334] (-) TimerEvent: {}
+[2.607361] (-) TimerEvent: {}
+[2.708382] (-) TimerEvent: {}
+[2.809388] (-) TimerEvent: {}
+[2.910376] (-) TimerEvent: {}
+[3.011367] (-) TimerEvent: {}
+[3.112346] (-) TimerEvent: {}
+[3.213353] (-) TimerEvent: {}
+[3.314362] (-) TimerEvent: {}
+[3.415368] (-) TimerEvent: {}
+[3.477651] (my_planner) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[3.487862] (my_planner) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.490716] (my_planner) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.515616] (-) TimerEvent: {}
+[3.616401] (-) TimerEvent: {}
+[3.716935] (-) TimerEvent: {}
+[3.817696] (-) TimerEvent: {}
+[3.914538] (my_planner) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.917846] (-) TimerEvent: {}
+[3.990460] (my_planner) StdoutLine: {'line': b'-- Generating done\n'}
+[4.005414] (my_planner) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[4.005824] (my_planner) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[4.005994] (my_planner) StderrLine: {'line': b'\n'}
+[4.006163] (my_planner) StderrLine: {'line': b'    OpenGL_GL_PREFERENCE\n'}
+[4.006324] (my_planner) StderrLine: {'line': b'\n'}
+[4.006487] (my_planner) StderrLine: {'line': b'\x1b[0m\n'}
+[4.006739] (my_planner) StdoutLine: {'line': b'-- Build files have been written to: /home/zeeshan/ros2_ws/build/my_planner\n'}
+[4.018004] (-) TimerEvent: {}
+[4.048468] (my_planner) CommandEnded: {'returncode': 0}
+[4.049452] (my_planner) JobProgress: {'identifier': 'my_planner', 'progress': 'build'}
+[4.049525] (my_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zeeshan/ros2_ws/build/my_planner', '--', '-j4', '-l4'], 'cwd': '/home/zeeshan/ros2_ws/build/my_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/my_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.118171] (-) TimerEvent: {}
+[4.218931] (-) TimerEvent: {}
+[4.319762] (-) TimerEvent: {}
+[4.320425] (my_planner) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target planner_node\x1b[0m\n'}
+[4.419944] (-) TimerEvent: {}
+[4.483929] (my_planner) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking CXX executable planner_node\x1b[0m\n'}
+[4.520134] (-) TimerEvent: {}
+[4.621280] (-) TimerEvent: {}
+[4.723891] (-) TimerEvent: {}
+[4.824824] (-) TimerEvent: {}
+[4.925451] (-) TimerEvent: {}
+[5.026090] (-) TimerEvent: {}
+[5.126719] (-) TimerEvent: {}
+[5.227342] (-) TimerEvent: {}
+[5.249097] (Stage) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/file_manager.cc.o\x1b[0m\n'}
+[5.327523] (-) TimerEvent: {}
+[5.428258] (-) TimerEvent: {}
+[5.528901] (-) TimerEvent: {}
+[5.604610] (Stage) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/gl.cc.o\x1b[0m\n'}
+[5.620571] (Stage) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/logentry.cc.o\x1b[0m\n'}
+[5.629138] (-) TimerEvent: {}
+[5.729784] (-) TimerEvent: {}
+[5.830396] (-) TimerEvent: {}
+[5.931455] (-) TimerEvent: {}
+[6.032506] (-) TimerEvent: {}
+[6.133612] (-) TimerEvent: {}
+[6.234736] (-) TimerEvent: {}
+[6.335339] (-) TimerEvent: {}
+[6.435937] (-) TimerEvent: {}
+[6.536554] (-) TimerEvent: {}
+[6.582535] (Stage) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model.cc.o\x1b[0m\n'}
+[6.636741] (-) TimerEvent: {}
+[6.737712] (-) TimerEvent: {}
+[6.838602] (-) TimerEvent: {}
+[6.939667] (-) TimerEvent: {}
+[7.040742] (-) TimerEvent: {}
+[7.141805] (-) TimerEvent: {}
+[7.242882] (-) TimerEvent: {}
+[7.343975] (-) TimerEvent: {}
+[7.445187] (-) TimerEvent: {}
+[7.545794] (-) TimerEvent: {}
+[7.646695] (-) TimerEvent: {}
+[7.747593] (-) TimerEvent: {}
+[7.848565] (-) TimerEvent: {}
+[7.949762] (-) TimerEvent: {}
+[8.050853] (-) TimerEvent: {}
+[8.151956] (-) TimerEvent: {}
+[8.253142] (-) TimerEvent: {}
+[8.263614] (Stage) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_actuator.cc.o\x1b[0m\n'}
+[8.353348] (-) TimerEvent: {}
+[8.453889] (-) TimerEvent: {}
+[8.554706] (-) TimerEvent: {}
+[8.655294] (-) TimerEvent: {}
+[8.755885] (-) TimerEvent: {}
+[8.856501] (-) TimerEvent: {}
+[8.957510] (-) TimerEvent: {}
+[8.964783] (Stage) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blinkenlight.cc.o\x1b[0m\n'}
+[9.028139] (my_planner) StdoutLine: {'line': b'[100%] Built target planner_node\n'}
+[9.057668] (-) TimerEvent: {}
+[9.087895] (my_planner) CommandEnded: {'returncode': 0}
+[9.157814] (-) TimerEvent: {}
+[9.179857] (Stage) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blobfinder.cc.o\x1b[0m\n'}
+[9.257975] (-) TimerEvent: {}
+[9.358805] (-) TimerEvent: {}
+[9.414994] (my_planner) JobProgress: {'identifier': 'my_planner', 'progress': 'install'}
+[9.427051] (my_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zeeshan/ros2_ws/build/my_planner'], 'cwd': '/home/zeeshan/ros2_ws/build/my_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/my_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.458994] (-) TimerEvent: {}
+[9.461274] (my_planner) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[9.474722] (my_planner) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.477071] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/lib/my_planner/planner_node\n'}
+[9.548711] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/launch/display_launch.py\n'}
+[9.559148] (-) TimerEvent: {}
+[9.589195] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/config/rviz_config.rviz\n'}
+[9.642295] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/ament_index/resource_index/package_run_dependencies/my_planner\n'}
+[9.659315] (-) TimerEvent: {}
+[9.689306] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/ament_index/resource_index/parent_prefix_path/my_planner\n'}
+[9.734836] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/environment/ament_prefix_path.sh\n'}
+[9.758646] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/environment/ament_prefix_path.dsv\n'}
+[9.759409] (-) TimerEvent: {}
+[9.784010] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/environment/path.sh\n'}
+[9.810439] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/environment/path.dsv\n'}
+[9.835136] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/local_setup.bash\n'}
+[9.859747] (-) TimerEvent: {}
+[9.860900] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/local_setup.sh\n'}
+[9.886383] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/local_setup.zsh\n'}
+[9.913346] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/local_setup.dsv\n'}
+[9.938180] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.dsv\n'}
+[9.959900] (-) TimerEvent: {}
+[9.963725] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/ament_index/resource_index/packages/my_planner\n'}
+[9.990493] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/cmake/my_plannerConfig.cmake\n'}
+[10.015541] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/cmake/my_plannerConfig-version.cmake\n'}
+[10.041115] (my_planner) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/my_planner/share/my_planner/package.xml\n'}
+[10.060088] (-) TimerEvent: {}
+[10.073086] (my_planner) CommandEnded: {'returncode': 0}
+[10.160422] (-) TimerEvent: {}
+[10.261292] (-) TimerEvent: {}
+[10.362384] (-) TimerEvent: {}
+[10.463433] (-) TimerEvent: {}
+[10.553446] (my_planner) JobEnded: {'identifier': 'my_planner', 'rc': 0}
+[10.563624] (-) TimerEvent: {}
+[10.664196] (-) TimerEvent: {}
+[10.764796] (-) TimerEvent: {}
+[10.865390] (-) TimerEvent: {}
+[10.965972] (-) TimerEvent: {}
+[11.065699] (Stage) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_bumper.cc.o\x1b[0m\n'}
+[11.066105] (-) TimerEvent: {}
+[11.166530] (-) TimerEvent: {}
+[11.267081] (-) TimerEvent: {}
+[11.367647] (-) TimerEvent: {}
+[11.468220] (-) TimerEvent: {}
+[11.568867] (-) TimerEvent: {}
+[11.669473] (-) TimerEvent: {}
+[11.770064] (-) TimerEvent: {}
+[11.870630] (-) TimerEvent: {}
+[11.971208] (-) TimerEvent: {}
+[12.064301] (Stage) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_callbacks.cc.o\x1b[0m\n'}
+[12.071371] (-) TimerEvent: {}
+[12.171951] (-) TimerEvent: {}
+[12.272572] (-) TimerEvent: {}
+[12.373160] (-) TimerEvent: {}
+[12.473758] (-) TimerEvent: {}
+[12.574653] (-) TimerEvent: {}
+[12.616924] (Stage) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_camera.cc.o\x1b[0m\n'}
+[12.674843] (-) TimerEvent: {}
+[12.775468] (-) TimerEvent: {}
+[12.858887] (Stage) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_draw.cc.o\x1b[0m\n'}
+[12.875653] (-) TimerEvent: {}
+[12.976523] (-) TimerEvent: {}
+[13.077368] (-) TimerEvent: {}
+[13.178226] (-) TimerEvent: {}
+[13.279189] (-) TimerEvent: {}
+[13.380028] (-) TimerEvent: {}
+[13.480945] (-) TimerEvent: {}
+[13.581534] (-) TimerEvent: {}
+[13.682106] (-) TimerEvent: {}
+[13.782661] (-) TimerEvent: {}
+[13.883245] (-) TimerEvent: {}
+[13.892873] (Stage) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_fiducial.cc.o\x1b[0m\n'}
+[13.983413] (-) TimerEvent: {}
+[14.084030] (-) TimerEvent: {}
+[14.184615] (-) TimerEvent: {}
+[14.285209] (-) TimerEvent: {}
+[14.385815] (-) TimerEvent: {}
+[14.486395] (-) TimerEvent: {}
+[14.587286] (-) TimerEvent: {}
+[14.688089] (-) TimerEvent: {}
+[14.788666] (-) TimerEvent: {}
+[14.889222] (-) TimerEvent: {}
+[14.989810] (-) TimerEvent: {}
+[15.071674] (Stage) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_gripper.cc.o\x1b[0m\n'}
+[15.089978] (-) TimerEvent: {}
+[15.190592] (-) TimerEvent: {}
+[15.291212] (-) TimerEvent: {}
+[15.391819] (-) TimerEvent: {}
+[15.492424] (-) TimerEvent: {}
+[15.593114] (-) TimerEvent: {}
+[15.693784] (-) TimerEvent: {}
+[15.794433] (-) TimerEvent: {}
+[15.895087] (-) TimerEvent: {}
+[15.912154] (Stage) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_lightindicator.cc.o\x1b[0m\n'}
+[15.995273] (-) TimerEvent: {}
+[16.095886] (-) TimerEvent: {}
+[16.196503] (-) TimerEvent: {}
+[16.297136] (-) TimerEvent: {}
+[16.397747] (-) TimerEvent: {}
+[16.498341] (-) TimerEvent: {}
+[16.523251] (Stage) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_position.cc.o\x1b[0m\n'}
+[16.598540] (-) TimerEvent: {}
+[16.699222] (-) TimerEvent: {}
+[16.799850] (-) TimerEvent: {}
+[16.900490] (-) TimerEvent: {}
+[17.001312] (-) TimerEvent: {}
+[17.102348] (-) TimerEvent: {}
+[17.204170] (-) TimerEvent: {}
+[17.304946] (-) TimerEvent: {}
+[17.321493] (Stage) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_ranger.cc.o\x1b[0m\n'}
+[17.405140] (-) TimerEvent: {}
+[17.505710] (-) TimerEvent: {}
+[17.606278] (-) TimerEvent: {}
+[17.706909] (-) TimerEvent: {}
+[17.807508] (-) TimerEvent: {}
+[17.908137] (-) TimerEvent: {}
+[18.008754] (-) TimerEvent: {}
+[18.109388] (-) TimerEvent: {}
+[18.210405] (-) TimerEvent: {}
+[18.293241] (Stage) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/option.cc.o\x1b[0m\n'}
+[18.310557] (-) TimerEvent: {}
+[18.411202] (-) TimerEvent: {}
+[18.511789] (-) TimerEvent: {}
+[18.612465] (-) TimerEvent: {}
+[18.713130] (-) TimerEvent: {}
+[18.813727] (-) TimerEvent: {}
+[18.874076] (Stage) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/powerpack.cc.o\x1b[0m\n'}
+[18.913885] (-) TimerEvent: {}
+[19.014465] (-) TimerEvent: {}
+[19.115074] (-) TimerEvent: {}
+[19.215697] (-) TimerEvent: {}
+[19.316291] (-) TimerEvent: {}
+[19.416913] (-) TimerEvent: {}
+[19.517568] (-) TimerEvent: {}
+[19.618151] (-) TimerEvent: {}
+[19.719009] (-) TimerEvent: {}
+[19.819864] (-) TimerEvent: {}
+[19.920703] (-) TimerEvent: {}
+[20.021544] (-) TimerEvent: {}
+[20.122364] (-) TimerEvent: {}
+[20.212783] (Stage) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/region.cc.o\x1b[0m\n'}
+[20.222606] (-) TimerEvent: {}
+[20.323203] (-) TimerEvent: {}
+[20.423848] (-) TimerEvent: {}
+[20.524445] (-) TimerEvent: {}
+[20.625274] (-) TimerEvent: {}
+[20.726082] (-) TimerEvent: {}
+[20.782002] (Stage) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/stage.cc.o\x1b[0m\n'}
+[20.826261] (-) TimerEvent: {}
+[20.927306] (-) TimerEvent: {}
+[20.931151] (Stage) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/texture_manager.cc.o\x1b[0m\n'}
+[21.027466] (-) TimerEvent: {}
+[21.128513] (-) TimerEvent: {}
+[21.229121] (-) TimerEvent: {}
+[21.329979] (-) TimerEvent: {}
+[21.430895] (-) TimerEvent: {}
+[21.531776] (-) TimerEvent: {}
+[21.632678] (-) TimerEvent: {}
+[21.693186] (Stage) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/typetable.cc.o\x1b[0m\n'}
+[21.732859] (-) TimerEvent: {}
+[21.833440] (-) TimerEvent: {}
+[21.934033] (-) TimerEvent: {}
+[22.034620] (-) TimerEvent: {}
+[22.135204] (-) TimerEvent: {}
+[22.235865] (-) TimerEvent: {}
+[22.336460] (-) TimerEvent: {}
+[22.437093] (-) TimerEvent: {}
+[22.537676] (-) TimerEvent: {}
+[22.638227] (-) TimerEvent: {}
+[22.738793] (-) TimerEvent: {}
+[22.839351] (-) TimerEvent: {}
+[22.939974] (-) TimerEvent: {}
+[23.040594] (-) TimerEvent: {}
+[23.141768] (-) TimerEvent: {}
+[23.242797] (-) TimerEvent: {}
+[23.343893] (-) TimerEvent: {}
+[23.445037] (-) TimerEvent: {}
+[23.546147] (-) TimerEvent: {}
+[23.647840] (-) TimerEvent: {}
+[23.692559] (Stage) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/world.cc.o\x1b[0m\n'}
+[23.748031] (-) TimerEvent: {}
+[23.811564] (Stage) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldfile.cc.o\x1b[0m\n'}
+[23.848218] (-) TimerEvent: {}
+[23.948804] (-) TimerEvent: {}
+[24.049694] (-) TimerEvent: {}
+[24.150294] (-) TimerEvent: {}
+[24.250876] (-) TimerEvent: {}
+[24.351470] (-) TimerEvent: {}
+[24.452099] (-) TimerEvent: {}
+[24.534018] (Stage) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/canvas.cc.o\x1b[0m\n'}
+[24.552263] (-) TimerEvent: {}
+[24.653154] (-) TimerEvent: {}
+[24.753963] (-) TimerEvent: {}
+[24.854700] (-) TimerEvent: {}
+[24.955536] (-) TimerEvent: {}
+[25.006303] (Stage) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/options_dlg.cc.o\x1b[0m\n'}
+[25.055722] (-) TimerEvent: {}
+[25.156569] (-) TimerEvent: {}
+[25.257418] (-) TimerEvent: {}
+[25.358262] (-) TimerEvent: {}
+[25.459116] (-) TimerEvent: {}
+[25.559978] (-) TimerEvent: {}
+[25.660840] (-) TimerEvent: {}
+[25.761677] (-) TimerEvent: {}
+[25.862512] (-) TimerEvent: {}
+[25.963374] (-) TimerEvent: {}
+[26.064208] (-) TimerEvent: {}
+[26.165051] (-) TimerEvent: {}
+[26.266018] (-) TimerEvent: {}
+[26.367527] (-) TimerEvent: {}
+[26.468580] (-) TimerEvent: {}
+[26.569496] (-) TimerEvent: {}
+[26.670047] (-) TimerEvent: {}
+[26.772237] (-) TimerEvent: {}
+[26.873207] (-) TimerEvent: {}
+[26.973786] (-) TimerEvent: {}
+[27.074352] (-) TimerEvent: {}
+[27.174929] (-) TimerEvent: {}
+[27.275490] (-) TimerEvent: {}
+[27.376068] (-) TimerEvent: {}
+[27.476659] (-) TimerEvent: {}
+[27.577227] (-) TimerEvent: {}
+[27.677798] (-) TimerEvent: {}
+[27.778517] (-) TimerEvent: {}
+[27.879106] (-) TimerEvent: {}
+[27.979639] (-) TimerEvent: {}
+[28.080179] (-) TimerEvent: {}
+[28.180714] (-) TimerEvent: {}
+[28.281279] (-) TimerEvent: {}
+[28.381822] (-) TimerEvent: {}
+[28.482348] (-) TimerEvent: {}
+[28.583333] (-) TimerEvent: {}
+[28.683906] (-) TimerEvent: {}
+[28.730470] (Stage) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/vis_strip.cc.o\x1b[0m\n'}
+[28.784084] (-) TimerEvent: {}
+[28.884884] (-) TimerEvent: {}
+[28.985447] (-) TimerEvent: {}
+[29.086470] (-) TimerEvent: {}
+[29.187032] (-) TimerEvent: {}
+[29.287640] (-) TimerEvent: {}
+[29.388248] (-) TimerEvent: {}
+[29.410405] (Stage) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldgui.cc.o\x1b[0m\n'}
+[29.488425] (-) TimerEvent: {}
+[29.589045] (-) TimerEvent: {}
+[29.689619] (-) TimerEvent: {}
+[29.790203] (-) TimerEvent: {}
+[29.890776] (-) TimerEvent: {}
+[29.991381] (-) TimerEvent: {}
+[30.091977] (-) TimerEvent: {}
+[30.192564] (-) TimerEvent: {}
+[30.292651] (Stage) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/ancestor.cc.o\x1b[0m\n'}
+[30.293532] (-) TimerEvent: {}
+[30.394017] (-) TimerEvent: {}
+[30.494612] (-) TimerEvent: {}
+[30.595283] (-) TimerEvent: {}
+[30.695890] (-) TimerEvent: {}
+[30.797141] (-) TimerEvent: {}
+[30.897715] (-) TimerEvent: {}
+[30.998337] (-) TimerEvent: {}
+[31.098931] (-) TimerEvent: {}
+[31.200035] (-) TimerEvent: {}
+[31.300890] (-) TimerEvent: {}
+[31.401577] (-) TimerEvent: {}
+[31.502124] (-) TimerEvent: {}
+[31.602798] (-) TimerEvent: {}
+[31.703454] (-) TimerEvent: {}
+[31.804276] (-) TimerEvent: {}
+[31.904829] (-) TimerEvent: {}
+[32.005493] (-) TimerEvent: {}
+[32.106093] (-) TimerEvent: {}
+[32.206996] (-) TimerEvent: {}
+[32.307596] (-) TimerEvent: {}
+[32.408218] (-) TimerEvent: {}
+[32.508796] (-) TimerEvent: {}
+[32.609592] (-) TimerEvent: {}
+[32.710377] (-) TimerEvent: {}
+[32.810934] (-) TimerEvent: {}
+[32.911442] (-) TimerEvent: {}
+[33.012001] (-) TimerEvent: {}
+[33.112549] (-) TimerEvent: {}
+[33.213067] (-) TimerEvent: {}
+[33.304819] (Stage) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libstage.so\x1b[0m\n'}
+[33.313171] (-) TimerEvent: {}
+[33.413684] (-) TimerEvent: {}
+[33.514192] (-) TimerEvent: {}
+[33.614881] (-) TimerEvent: {}
+[33.715626] (-) TimerEvent: {}
+[33.736398] (Stage) StdoutLine: {'line': b'[ 57%] Built target stage\n'}
+[33.776978] (Stage) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/fasr.dir/fasr.cc.o\x1b[0m\n'}
+[33.778241] (Stage) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stagebinary.dir/main.cc.o\x1b[0m\n'}
+[33.782289] (Stage) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/sink.dir/sink.cc.o\x1b[0m\n'}
+[33.815808] (-) TimerEvent: {}
+[33.916322] (-) TimerEvent: {}
+[34.016931] (-) TimerEvent: {}
+[34.117499] (-) TimerEvent: {}
+[34.218017] (-) TimerEvent: {}
+[34.318534] (-) TimerEvent: {}
+[34.419085] (-) TimerEvent: {}
+[34.519621] (-) TimerEvent: {}
+[34.620179] (-) TimerEvent: {}
+[34.721049] (-) TimerEvent: {}
+[34.821614] (-) TimerEvent: {}
+[34.853320] (Stage) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/source.dir/source.cc.o\x1b[0m\n'}
+[34.921777] (-) TimerEvent: {}
+[35.022788] (-) TimerEvent: {}
+[35.123792] (-) TimerEvent: {}
+[35.224377] (-) TimerEvent: {}
+[35.324979] (-) TimerEvent: {}
+[35.426048] (-) TimerEvent: {}
+[35.526903] (-) TimerEvent: {}
+[35.627729] (-) TimerEvent: {}
+[35.728583] (-) TimerEvent: {}
+[35.829137] (-) TimerEvent: {}
+[35.929682] (-) TimerEvent: {}
+[36.030287] (-) TimerEvent: {}
+[36.130894] (-) TimerEvent: {}
+[36.231737] (-) TimerEvent: {}
+[36.332624] (-) TimerEvent: {}
+[36.433757] (-) TimerEvent: {}
+[36.482241] (Stage) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared module sink.so\x1b[0m\n'}
+[36.533921] (-) TimerEvent: {}
+[36.634723] (-) TimerEvent: {}
+[36.658667] (Stage) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX executable stage\x1b[0m\n'}
+[36.734908] (-) TimerEvent: {}
+[36.835729] (-) TimerEvent: {}
+[36.859957] (Stage) StdoutLine: {'line': b'[ 67%] Built target sink\n'}
+[36.928619] (Stage) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared module fasr.so\x1b[0m\n'}
+[36.935923] (-) TimerEvent: {}
+[37.036682] (-) TimerEvent: {}
+[37.113292] (Stage) StdoutLine: {'line': b'[ 69%] Built target stagebinary\n'}
+[37.136832] (-) TimerEvent: {}
+[37.237630] (-) TimerEvent: {}
+[37.298363] (Stage) StdoutLine: {'line': b'[ 69%] Built target fasr\n'}
+[37.337790] (-) TimerEvent: {}
+[37.438440] (-) TimerEvent: {}
+[37.539096] (-) TimerEvent: {}
+[37.635713] (Stage) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared module source.so\x1b[0m\n'}
+[37.639253] (-) TimerEvent: {}
+[37.739818] (-) TimerEvent: {}
+[37.840360] (-) TimerEvent: {}
+[37.907530] (Stage) StdoutLine: {'line': b'[ 71%] Built target source\n'}
+[37.940532] (-) TimerEvent: {}
+[37.946121] (Stage) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/rasterize.dir/rasterize.cc.o\x1b[0m\n'}
+[38.040681] (-) TimerEvent: {}
+[38.141199] (-) TimerEvent: {}
+[38.241777] (-) TimerEvent: {}
+[38.342318] (-) TimerEvent: {}
+[38.442858] (-) TimerEvent: {}
+[38.543381] (-) TimerEvent: {}
+[38.643950] (-) TimerEvent: {}
+[38.744476] (-) TimerEvent: {}
+[38.844976] (-) TimerEvent: {}
+[38.945505] (-) TimerEvent: {}
+[39.046019] (-) TimerEvent: {}
+[39.146518] (-) TimerEvent: {}
+[39.247032] (-) TimerEvent: {}
+[39.347514] (-) TimerEvent: {}
+[39.448011] (-) TimerEvent: {}
+[39.548523] (-) TimerEvent: {}
+[39.649112] (-) TimerEvent: {}
+[39.749668] (-) TimerEvent: {}
+[39.759802] (Stage) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared module rasterize.so\x1b[0m\n'}
+[39.849815] (-) TimerEvent: {}
+[39.950318] (-) TimerEvent: {}
+[40.035798] (Stage) StdoutLine: {'line': b'[ 74%] Built target rasterize\n'}
+[40.050491] (-) TimerEvent: {}
+[40.075109] (Stage) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/lasernoise.dir/lasernoise.cc.o\x1b[0m\n'}
+[40.150639] (-) TimerEvent: {}
+[40.251380] (-) TimerEvent: {}
+[40.351869] (-) TimerEvent: {}
+[40.452414] (-) TimerEvent: {}
+[40.552940] (-) TimerEvent: {}
+[40.653791] (-) TimerEvent: {}
+[40.754285] (-) TimerEvent: {}
+[40.854793] (-) TimerEvent: {}
+[40.955315] (-) TimerEvent: {}
+[41.055852] (-) TimerEvent: {}
+[41.100086] (Stage) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/dynamic.dir/dynamic.cc.o\x1b[0m\n'}
+[41.156009] (-) TimerEvent: {}
+[41.256739] (-) TimerEvent: {}
+[41.357257] (-) TimerEvent: {}
+[41.457777] (-) TimerEvent: {}
+[41.558316] (-) TimerEvent: {}
+[41.658852] (-) TimerEvent: {}
+[41.759398] (-) TimerEvent: {}
+[41.859994] (-) TimerEvent: {}
+[41.958674] (Stage) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared module lasernoise.so\x1b[0m\n'}
+[41.960103] (-) TimerEvent: {}
+[42.060586] (-) TimerEvent: {}
+[42.138921] (Stage) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/pioneer_flocking.dir/pioneer_flocking.cc.o\x1b[0m\n'}
+[42.160788] (-) TimerEvent: {}
+[42.261628] (-) TimerEvent: {}
+[42.279175] (Stage) StdoutLine: {'line': b'[ 81%] Built target lasernoise\n'}
+[42.321559] (Stage) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/wander.dir/wander.cc.o\x1b[0m\n'}
+[42.361815] (-) TimerEvent: {}
+[42.462350] (-) TimerEvent: {}
+[42.562892] (-) TimerEvent: {}
+[42.663442] (-) TimerEvent: {}
+[42.764007] (-) TimerEvent: {}
+[42.864690] (-) TimerEvent: {}
+[42.965584] (-) TimerEvent: {}
+[43.066129] (-) TimerEvent: {}
+[43.166671] (-) TimerEvent: {}
+[43.267244] (-) TimerEvent: {}
+[43.367799] (-) TimerEvent: {}
+[43.437461] (Stage) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared module dynamic.so\x1b[0m\n'}
+[43.459546] (Stage) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/fasr2.cc.o\x1b[0m\n'}
+[43.468035] (-) TimerEvent: {}
+[43.570202] (-) TimerEvent: {}
+[43.670746] (-) TimerEvent: {}
+[43.771292] (-) TimerEvent: {}
+[43.872041] (-) TimerEvent: {}
+[43.972859] (-) TimerEvent: {}
+[44.073692] (-) TimerEvent: {}
+[44.092659] (Stage) StdoutLine: {'line': b'[ 86%] Built target dynamic\n'}
+[44.164840] (Stage) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_swarm.dir/expand_swarm.cc.o\x1b[0m\n'}
+[44.173856] (-) TimerEvent: {}
+[44.274634] (-) TimerEvent: {}
+[44.375422] (-) TimerEvent: {}
+[44.476246] (-) TimerEvent: {}
+[44.577167] (-) TimerEvent: {}
+[44.677994] (-) TimerEvent: {}
+[44.778859] (-) TimerEvent: {}
+[44.882151] (-) TimerEvent: {}
+[44.982897] (-) TimerEvent: {}
+[45.057438] (Stage) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared module pioneer_flocking.so\x1b[0m\n'}
+[45.083085] (-) TimerEvent: {}
+[45.183982] (-) TimerEvent: {}
+[45.284897] (-) TimerEvent: {}
+[45.385834] (-) TimerEvent: {}
+[45.486737] (-) TimerEvent: {}
+[45.493859] (Stage) StdoutLine: {'line': b'[ 89%] Built target pioneer_flocking\n'}
+[45.517235] (Stage) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared module wander.so\x1b[0m\n'}
+[45.552270] (Stage) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_pioneer.dir/expand_pioneer.cc.o\x1b[0m\n'}
+[45.586895] (-) TimerEvent: {}
+[45.687726] (-) TimerEvent: {}
+[45.788640] (-) TimerEvent: {}
+[45.889614] (-) TimerEvent: {}
+[45.901617] (Stage) StdoutLine: {'line': b'[ 93%] Built target wander\n'}
+[45.989778] (-) TimerEvent: {}
+[46.090692] (-) TimerEvent: {}
+[46.191820] (-) TimerEvent: {}
+[46.292901] (-) TimerEvent: {}
+[46.393737] (-) TimerEvent: {}
+[46.494687] (-) TimerEvent: {}
+[46.595482] (-) TimerEvent: {}
+[46.696279] (-) TimerEvent: {}
+[46.796841] (-) TimerEvent: {}
+[46.897515] (-) TimerEvent: {}
+[46.998093] (-) TimerEvent: {}
+[47.098692] (-) TimerEvent: {}
+[47.169985] (Stage) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX shared module expand_swarm.so\x1b[0m\n'}
+[47.198845] (-) TimerEvent: {}
+[47.299404] (-) TimerEvent: {}
+[47.399991] (-) TimerEvent: {}
+[47.500559] (-) TimerEvent: {}
+[47.543744] (Stage) StdoutLine: {'line': b'[ 94%] Built target expand_swarm\n'}
+[47.600732] (-) TimerEvent: {}
+[47.701425] (-) TimerEvent: {}
+[47.801986] (-) TimerEvent: {}
+[47.902557] (-) TimerEvent: {}
+[47.907947] (Stage) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared module expand_pioneer.so\x1b[0m\n'}
+[47.982740] (Stage) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/astar/findpath.cpp.o\x1b[0m\n'}
+[48.002739] (-) TimerEvent: {}
+[48.103278] (-) TimerEvent: {}
+[48.203858] (-) TimerEvent: {}
+[48.226867] (Stage) StdoutLine: {'line': b'[ 98%] Built target expand_pioneer\n'}
+[48.304008] (-) TimerEvent: {}
+[48.404519] (-) TimerEvent: {}
+[48.505178] (-) TimerEvent: {}
+[48.605715] (-) TimerEvent: {}
+[48.706265] (-) TimerEvent: {}
+[48.806784] (-) TimerEvent: {}
+[48.907318] (-) TimerEvent: {}
+[49.007856] (-) TimerEvent: {}
+[49.108342] (-) TimerEvent: {}
+[49.208973] (-) TimerEvent: {}
+[49.309631] (-) TimerEvent: {}
+[49.410158] (-) TimerEvent: {}
+[49.510712] (-) TimerEvent: {}
+[49.579970] (Stage) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared module fasr2.so\x1b[0m\n'}
+[49.610889] (-) TimerEvent: {}
+[49.711408] (-) TimerEvent: {}
+[49.812041] (-) TimerEvent: {}
+[49.907088] (Stage) StdoutLine: {'line': b'[100%] Built target fasr2\n'}
+[49.912191] (-) TimerEvent: {}
+[49.930760] (Stage) CommandEnded: {'returncode': 0}
+[49.983926] (Stage) JobProgress: {'identifier': 'Stage', 'progress': 'install'}
+[49.984781] (Stage) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zeeshan/ros2_ws/build/Stage'], 'cwd': '/home/zeeshan/ros2_ws/build/Stage', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/Stage'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[50.000582] (Stage) StdoutLine: {'line': b'-- Install configuration: "RELEASE"\n'}
+[50.000973] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/pkgconfig/stage.pc\n'}
+[50.001500] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/cmake/Stage/stage-config.cmake\n'}
+[50.001759] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/cmake/Stage/stage-config-version.cmake\n'}
+[50.002593] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/bin/stage\n'}
+[50.003031] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/bin/stage" to ""\n'}
+[50.003306] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/libstage.so.4.3.0\n'}
+[50.005712] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/libstage.so\n'}
+[50.006067] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/include/Stage-4.3/stage.hh\n'}
+[50.007327] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/fasr.so\n'}
+[50.007923] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/fasr.so" to ""\n'}
+[50.008163] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/sink.so\n'}
+[50.008552] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/sink.so" to ""\n'}
+[50.008770] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/source.so\n'}
+[50.009256] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/source.so" to ""\n'}
+[50.009725] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/wander.so\n'}
+[50.010019] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/wander.so" to ""\n'}
+[50.010875] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/pioneer_flocking.so\n'}
+[50.011178] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/pioneer_flocking.so" to ""\n'}
+[50.011344] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/rasterize.so\n'}
+[50.011538] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/rasterize.so" to ""\n'}
+[50.011802] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/lasernoise.so\n'}
+[50.012193] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/lasernoise.so" to ""\n'}
+[50.012408] (-) TimerEvent: {}
+[50.013081] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/dynamic.so\n'}
+[50.013371] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/dynamic.so" to ""\n'}
+[50.013531] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/fasr2.so\n'}
+[50.013811] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/fasr2.so" to ""\n'}
+[50.014380] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/blue.png\n'}
+[50.014641] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/death.png\n'}
+[50.014991] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/green.png\n'}
+[50.015199] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/logo.png\n'}
+[50.015404] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/mains.png\n'}
+[50.015950] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/mainspower.png\n'}
+[50.016358] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/question_mark.png\n'}
+[50.016587] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/red.png\n'}
+[50.016833] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/stagelogo.png\n'}
+[50.017163] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/stall-old.png\n'}
+[50.017446] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/stall.png\n'}
+[50.017702] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/assets/rgb.txt\n'}
+[50.018013] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/rgb.txt\n'}
+[50.018729] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/amcl-sonar.cfg\n'}
+[50.018930] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/autolab.cfg\n'}
+[50.019121] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/camera.cfg\n'}
+[50.019320] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/everything.cfg\n'}
+[50.019526] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/lsp_test.cfg\n'}
+[50.019760] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/mbicp.cfg\n'}
+[50.019991] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/nd.cfg\n'}
+[50.020179] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/roomba.cfg\n'}
+[50.020410] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/simple.cfg\n'}
+[50.020616] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/test.cfg\n'}
+[50.020810] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/uoa_robotics_lab.cfg\n'}
+[50.021058] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/vfh.cfg\n'}
+[50.021500] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wavefront-remote.cfg\n'}
+[50.021701] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wavefront.cfg\n'}
+[50.021909] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi.cfg\n'}
+[50.022114] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/SFU.world\n'}
+[50.022432] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/autolab.world\n'}
+[50.022661] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/camera.world\n'}
+[50.022903] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/circuit.world\n'}
+[50.023140] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/everything.world\n'}
+[50.023361] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/fasr.world\n'}
+[50.023566] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/fasr2.world\n'}
+[50.023826] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/fasr_plan.world\n'}
+[50.024046] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/large.world\n'}
+[50.024273] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/lsp_test.world\n'}
+[50.024483] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/mbicp.world\n'}
+[50.024687] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/pioneer_flocking.world\n'}
+[50.024884] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/pioneer_follow.world\n'}
+[50.025139] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/pioneer_walle.world\n'}
+[50.025387] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/roomba.world\n'}
+[50.025598] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/sensor_noise_demo.world\n'}
+[50.025830] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/sensor_noise_module_demo.world\n'}
+[50.026043] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/simple.world\n'}
+[50.026250] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/uoa_robotics_lab.world\n'}
+[50.026454] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi.world\n'}
+[50.026674] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/beacons.inc\n'}
+[50.026917] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/chatterbox.inc\n'}
+[50.027124] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/hokuyo.inc\n'}
+[50.027315] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/irobot.inc\n'}
+[50.027519] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/map.inc\n'}
+[50.027820] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/objects.inc\n'}
+[50.028387] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/pantilt.inc\n'}
+[50.028563] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/pioneer.inc\n'}
+[50.028789] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/sick.inc\n'}
+[50.029038] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/ubot.inc\n'}
+[50.029511] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/uoa_robotics_lab_models.inc\n'}
+[50.029822] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/walle.inc\n'}
+[50.030653] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/cfggen.sh\n'}
+[50.031822] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/test.sh\n'}
+[50.032364] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/worldgen.sh\n'}
+[50.032590] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/expand_swarm.so\n'}
+[50.032760] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/expand_swarm.so" to ""\n'}
+[50.032958] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/expand_pioneer.so\n'}
+[50.033370] (Stage) StdoutLine: {'line': b'-- Set runtime path of "/home/zeeshan/ros2_ws/install/Stage/lib/Stage-4.3/expand_pioneer.so" to ""\n'}
+[50.033530] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/889_05.png\n'}
+[50.033690] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/SFU_1200x615.png\n'}
+[50.034089] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/SRI-AIC-kwing.png\n'}
+[50.034342] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/autolab.png\n'}
+[50.034546] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/cave.png\n'}
+[50.034760] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/cave_compact.png\n'}
+[50.034971] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/cave_filled.png\n'}
+[50.035253] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/frieburg.png\n'}
+[50.035549] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/ghost.png\n'}
+[50.035742] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/hospital.png\n'}
+[50.036174] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/hospital_section.png\n'}
+[50.036365] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/human_outline.png\n'}
+[50.036552] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/mbicp.png\n'}
+[50.036773] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/rink.png\n'}
+[50.037023] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/sal2.png\n'}
+[50.037268] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/simple_rooms.png\n'}
+[50.037504] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/space_invader.png\n'}
+[50.037726] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/submarine.png\n'}
+[50.037935] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/submarine_small.png\n'}
+[50.038281] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/table.png\n'}
+[50.038497] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/bitmaps/uoa_robotics_lab.png\n'}
+[50.039119] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/commando.world\n'}
+[50.039390] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/hosp_wifi.world\n'}
+[50.039622] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/hosp_wifi_5.world\n'}
+[50.039817] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/wifi.world\n'}
+[50.040025] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/wifi_itu.world\n'}
+[50.040226] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/wifi_logdistance.world\n'}
+[50.040433] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/wifi_ray.world\n'}
+[50.040636] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/wifi_simple.world\n'}
+[50.040856] (Stage) StdoutLine: {'line': b'-- Installing: /home/zeeshan/ros2_ws/install/Stage/share/stage/worlds/wifi/map.inc\n'}
+[50.044154] (Stage) CommandEnded: {'returncode': 0}
+[50.064413] (Stage) JobEnded: {'identifier': 'Stage', 'rc': 0}
+[50.067010] (stage_ros2) JobStarted: {'identifier': 'stage_ros2'}
+[50.078281] (stage_ros2) JobProgress: {'identifier': 'stage_ros2', 'progress': 'cmake'}
+[50.079602] (stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/zeeshan/ros2_ws/src/stage_ros2', '-DOpenGL_GL_PREFERENCE=LEGACY', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/stage_ros2'], 'cwd': '/home/zeeshan/ros2_ws/build/stage_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zeeshan/ros2_ws/install/Stage/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zeeshan/ros2_ws/install/Stage/bin:/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/stage_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zeeshan/ros2_ws/install/Stage:/opt/ros/humble')]), 'shell': False}
+[50.104677] (stage_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[50.112602] (-) TimerEvent: {}
+[50.213090] (-) TimerEvent: {}
+[50.313543] (-) TimerEvent: {}
+[50.338798] (stage_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[50.351976] (stage_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[50.406947] (stage_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[50.412453] (stage_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[50.413651] (-) TimerEvent: {}
+[50.425250] (stage_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[50.449965] (stage_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[50.487483] (stage_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[50.513835] (-) TimerEvent: {}
+[50.614332] (-) TimerEvent: {}
+[50.625168] (stage_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[50.628358] (stage_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[50.714500] (-) TimerEvent: {}
+[50.815005] (-) TimerEvent: {}
+[50.850895] (stage_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[50.915176] (-) TimerEvent: {}
+[51.015671] (-) TimerEvent: {}
+[51.116183] (-) TimerEvent: {}
+[51.216895] (-) TimerEvent: {}
+[51.232600] (stage_ros2) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.9 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[51.317073] (-) TimerEvent: {}
+[51.376985] (stage_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[51.417192] (-) TimerEvent: {}
+[51.520131] (-) TimerEvent: {}
+[51.620828] (-) TimerEvent: {}
+[51.698859] (stage_ros2) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[51.720971] (-) TimerEvent: {}
+[51.821645] (-) TimerEvent: {}
+[51.922123] (-) TimerEvent: {}
+[52.022790] (-) TimerEvent: {}
+[52.038463] (stage_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[52.122935] (-) TimerEvent: {}
+[52.223420] (-) TimerEvent: {}
+[52.323960] (-) TimerEvent: {}
+[52.424460] (-) TimerEvent: {}
+[52.524961] (-) TimerEvent: {}
+[52.625759] (-) TimerEvent: {}
+[52.726650] (-) TimerEvent: {}
+[52.728874] (stage_ros2) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[52.759177] (stage_ros2) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[52.762656] (stage_ros2) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[52.763422] (stage_ros2) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[52.802510] (stage_ros2) StdoutLine: {'line': b'-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[52.826814] (-) TimerEvent: {}
+[52.871434] (stage_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[52.926960] (-) TimerEvent: {}
+[53.027445] (-) TimerEvent: {}
+[53.078386] (stage_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[53.079143] (stage_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/zeeshan/ros2_ws/src/stage_ros2/./include;$<BUILD_INTERFACE:/home/zeeshan/ros2_ws/src/stage_ros2/include>\n'}
+[53.079334] (stage_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[53.081990] (stage_ros2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[53.085943] (stage_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[53.088621] (stage_ros2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[53.100883] (stage_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[53.101267] (stage_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[53.103670] (stage_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[53.107013] (stage_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[53.127593] (-) TimerEvent: {}
+[53.148837] (stage_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[53.152655] (stage_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/zeeshan/ros2_ws/build/stage_ros2\n'}
+[53.170407] (stage_ros2) CommandEnded: {'returncode': 0}
+[53.171562] (stage_ros2) JobProgress: {'identifier': 'stage_ros2', 'progress': 'build'}
+[53.172937] (stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zeeshan/ros2_ws/build/stage_ros2', '--', '-j4', '-l4'], 'cwd': '/home/zeeshan/ros2_ws/build/stage_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zeeshan/ros2_ws/install/Stage/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zeeshan/ros2_ws/install/Stage/bin:/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/stage_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zeeshan/ros2_ws/install/Stage:/opt/ros/humble')]), 'shell': False}
+[53.227775] (-) TimerEvent: {}
+[53.272664] (stage_ros2) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/stage_node.cpp.o\x1b[0m\n'}
+[53.327945] (-) TimerEvent: {}
+[53.428412] (-) TimerEvent: {}
+[53.528915] (-) TimerEvent: {}
+[53.629474] (-) TimerEvent: {}
+[53.729973] (-) TimerEvent: {}
+[53.830472] (-) TimerEvent: {}
+[53.930960] (-) TimerEvent: {}
+[54.031460] (-) TimerEvent: {}
+[54.131982] (-) TimerEvent: {}
+[54.232499] (-) TimerEvent: {}
+[54.333012] (-) TimerEvent: {}
+[54.433576] (-) TimerEvent: {}
+[54.534071] (-) TimerEvent: {}
+[54.634592] (-) TimerEvent: {}
+[54.735113] (-) TimerEvent: {}
+[54.835797] (-) TimerEvent: {}
+[54.936310] (-) TimerEvent: {}
+[55.036830] (-) TimerEvent: {}
+[55.137327] (-) TimerEvent: {}
+[55.237823] (-) TimerEvent: {}
+[55.338622] (-) TimerEvent: {}
+[55.439133] (-) TimerEvent: {}
+[55.539697] (-) TimerEvent: {}
+[55.640216] (-) TimerEvent: {}
+[55.740737] (-) TimerEvent: {}
+[55.841259] (-) TimerEvent: {}
+[55.941767] (-) TimerEvent: {}
+[56.042293] (-) TimerEvent: {}
+[56.142800] (-) TimerEvent: {}
+[56.243303] (-) TimerEvent: {}
+[56.343825] (-) TimerEvent: {}
+[56.444360] (-) TimerEvent: {}
+[56.544887] (-) TimerEvent: {}
+[56.645468] (-) TimerEvent: {}
+[56.745979] (-) TimerEvent: {}
+[56.846507] (-) TimerEvent: {}
+[56.947023] (-) TimerEvent: {}
+[57.047522] (-) TimerEvent: {}
+[57.148046] (-) TimerEvent: {}
+[57.248582] (-) TimerEvent: {}
+[57.349122] (-) TimerEvent: {}
+[57.449669] (-) TimerEvent: {}
+[57.550194] (-) TimerEvent: {}
+[57.650695] (-) TimerEvent: {}
+[57.751259] (-) TimerEvent: {}
+[57.851927] (-) TimerEvent: {}
+[57.952603] (-) TimerEvent: {}
+[58.053157] (-) TimerEvent: {}
+[58.153702] (-) TimerEvent: {}
+[58.254231] (-) TimerEvent: {}
+[58.354754] (-) TimerEvent: {}
+[58.455247] (-) TimerEvent: {}
+[58.555752] (-) TimerEvent: {}
+[58.656270] (-) TimerEvent: {}
+[58.756776] (-) TimerEvent: {}
+[58.857319] (-) TimerEvent: {}
+[58.957818] (-) TimerEvent: {}
+[59.058625] (-) TimerEvent: {}
+[59.159140] (-) TimerEvent: {}
+[59.259672] (-) TimerEvent: {}
+[59.360201] (-) TimerEvent: {}
+[59.460689] (-) TimerEvent: {}
+[59.561228] (-) TimerEvent: {}
+[59.661843] (-) TimerEvent: {}
+[59.762357] (-) TimerEvent: {}
+[59.862875] (-) TimerEvent: {}
+[59.963435] (-) TimerEvent: {}
+[60.063971] (-) TimerEvent: {}
+[60.164512] (-) TimerEvent: {}
+[60.265269] (-) TimerEvent: {}
+[60.365939] (-) TimerEvent: {}
+[60.466441] (-) TimerEvent: {}
+[60.567010] (-) TimerEvent: {}
+[60.667648] (-) TimerEvent: {}
+[60.768172] (-) TimerEvent: {}
+[60.868689] (-) TimerEvent: {}
+[60.969204] (-) TimerEvent: {}
+[61.069716] (-) TimerEvent: {}
+[61.170281] (-) TimerEvent: {}
+[61.270806] (-) TimerEvent: {}
+[61.371333] (-) TimerEvent: {}
+[61.471861] (-) TimerEvent: {}
+[61.572350] (-) TimerEvent: {}
+[61.672864] (-) TimerEvent: {}
+[61.773454] (-) TimerEvent: {}
+[61.874129] (-) TimerEvent: {}
+[61.974635] (-) TimerEvent: {}
+[62.075113] (-) TimerEvent: {}
+[62.175643] (-) TimerEvent: {}
+[62.276285] (-) TimerEvent: {}
+[62.376864] (-) TimerEvent: {}
+[62.477388] (-) TimerEvent: {}
+[62.577917] (-) TimerEvent: {}
+[62.678435] (-) TimerEvent: {}
+[62.778973] (-) TimerEvent: {}
+[62.879509] (-) TimerEvent: {}
+[62.980034] (-) TimerEvent: {}
+[63.080607] (-) TimerEvent: {}
+[63.181160] (-) TimerEvent: {}
+[63.281679] (-) TimerEvent: {}
+[63.382179] (-) TimerEvent: {}
+[63.482697] (-) TimerEvent: {}
+[63.583222] (-) TimerEvent: {}
+[63.683736] (-) TimerEvent: {}
+[63.784266] (-) TimerEvent: {}
+[63.884811] (-) TimerEvent: {}
+[63.985361] (-) TimerEvent: {}
+[64.085880] (-) TimerEvent: {}
+[64.186557] (-) TimerEvent: {}
+[64.287084] (-) TimerEvent: {}
+[64.387592] (-) TimerEvent: {}
+[64.488091] (-) TimerEvent: {}
+[64.588637] (-) TimerEvent: {}
+[64.689152] (-) TimerEvent: {}
+[64.789647] (-) TimerEvent: {}
+[64.890140] (-) TimerEvent: {}
+[64.990858] (-) TimerEvent: {}
+[65.091567] (-) TimerEvent: {}
+[65.192163] (-) TimerEvent: {}
+[65.292696] (-) TimerEvent: {}
+[65.393172] (-) TimerEvent: {}
+[65.493681] (-) TimerEvent: {}
+[65.594254] (-) TimerEvent: {}
+[65.694777] (-) TimerEvent: {}
+[65.795315] (-) TimerEvent: {}
+[65.895815] (-) TimerEvent: {}
+[65.996352] (-) TimerEvent: {}
+[66.096856] (-) TimerEvent: {}
+[66.197409] (-) TimerEvent: {}
+[66.297910] (-) TimerEvent: {}
+[66.398402] (-) TimerEvent: {}
+[66.498929] (-) TimerEvent: {}
+[66.599436] (-) TimerEvent: {}
+[66.699913] (-) TimerEvent: {}
+[66.800413] (-) TimerEvent: {}
+[66.900911] (-) TimerEvent: {}
+[67.001468] (-) TimerEvent: {}
+[67.102006] (-) TimerEvent: {}
+[67.202638] (-) TimerEvent: {}
+[67.303198] (-) TimerEvent: {}
+[67.403729] (-) TimerEvent: {}
+[67.504257] (-) TimerEvent: {}
+[67.514522] (stage_ros2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/ranger.cpp.o\x1b[0m\n'}
+[67.514906] (stage_ros2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/vehicle.cpp.o\x1b[0m\n'}
+[67.516231] (stage_ros2) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/camera.cpp.o\x1b[0m\n'}
+[67.604447] (-) TimerEvent: {}
+[67.705036] (-) TimerEvent: {}
+[67.805554] (-) TimerEvent: {}
+[67.906107] (-) TimerEvent: {}
+[68.006850] (-) TimerEvent: {}
+[68.107591] (-) TimerEvent: {}
+[68.208340] (-) TimerEvent: {}
+[68.308877] (-) TimerEvent: {}
+[68.409426] (-) TimerEvent: {}
+[68.510132] (-) TimerEvent: {}
+[68.610723] (-) TimerEvent: {}
+[68.711420] (-) TimerEvent: {}
+[68.812987] (-) TimerEvent: {}
+[68.914061] (-) TimerEvent: {}
+[69.014604] (-) TimerEvent: {}
+[69.115164] (-) TimerEvent: {}
+[69.215720] (-) TimerEvent: {}
+[69.316275] (-) TimerEvent: {}
+[69.416827] (-) TimerEvent: {}
+[69.517380] (-) TimerEvent: {}
+[69.617990] (-) TimerEvent: {}
+[69.718542] (-) TimerEvent: {}
+[69.819106] (-) TimerEvent: {}
+[69.919660] (-) TimerEvent: {}
+[70.020223] (-) TimerEvent: {}
+[70.120789] (-) TimerEvent: {}
+[70.221354] (-) TimerEvent: {}
+[70.321963] (-) TimerEvent: {}
+[70.422488] (-) TimerEvent: {}
+[70.523188] (-) TimerEvent: {}
+[70.623822] (-) TimerEvent: {}
+[70.724360] (-) TimerEvent: {}
+[70.824948] (-) TimerEvent: {}
+[70.925766] (-) TimerEvent: {}
+[71.026605] (-) TimerEvent: {}
+[71.127198] (-) TimerEvent: {}
+[71.228307] (-) TimerEvent: {}
+[71.329354] (-) TimerEvent: {}
+[71.430161] (-) TimerEvent: {}
+[71.531042] (-) TimerEvent: {}
+[71.631943] (-) TimerEvent: {}
+[71.732925] (-) TimerEvent: {}
+[71.833793] (-) TimerEvent: {}
+[71.934658] (-) TimerEvent: {}
+[72.036163] (-) TimerEvent: {}
+[72.137134] (-) TimerEvent: {}
+[72.237953] (-) TimerEvent: {}
+[72.338813] (-) TimerEvent: {}
+[72.439666] (-) TimerEvent: {}
+[72.540518] (-) TimerEvent: {}
+[72.641378] (-) TimerEvent: {}
+[72.742381] (-) TimerEvent: {}
+[72.843218] (-) TimerEvent: {}
+[72.944096] (-) TimerEvent: {}
+[73.045074] (-) TimerEvent: {}
+[73.146083] (-) TimerEvent: {}
+[73.246642] (-) TimerEvent: {}
+[73.347211] (-) TimerEvent: {}
+[73.447796] (-) TimerEvent: {}
+[73.548644] (-) TimerEvent: {}
+[73.649499] (-) TimerEvent: {}
+[73.750321] (-) TimerEvent: {}
+[73.851184] (-) TimerEvent: {}
+[73.952018] (-) TimerEvent: {}
+[74.052843] (-) TimerEvent: {}
+[74.153763] (-) TimerEvent: {}
+[74.254603] (-) TimerEvent: {}
+[74.355422] (-) TimerEvent: {}
+[74.456235] (-) TimerEvent: {}
+[74.557079] (-) TimerEvent: {}
+[74.658007] (-) TimerEvent: {}
+[74.758822] (-) TimerEvent: {}
+[74.859638] (-) TimerEvent: {}
+[74.960422] (-) TimerEvent: {}
+[75.061418] (-) TimerEvent: {}
+[75.162349] (-) TimerEvent: {}
+[75.262950] (-) TimerEvent: {}
+[75.363807] (-) TimerEvent: {}
+[75.464660] (-) TimerEvent: {}
+[75.565747] (-) TimerEvent: {}
+[75.666821] (-) TimerEvent: {}
+[75.767646] (-) TimerEvent: {}
+[75.868710] (-) TimerEvent: {}
+[75.969568] (-) TimerEvent: {}
+[76.070584] (-) TimerEvent: {}
+[76.171486] (-) TimerEvent: {}
+[76.272288] (-) TimerEvent: {}
+[76.373148] (-) TimerEvent: {}
+[76.474045] (-) TimerEvent: {}
+[76.575139] (-) TimerEvent: {}
+[76.676199] (-) TimerEvent: {}
+[76.777283] (-) TimerEvent: {}
+[76.878116] (-) TimerEvent: {}
+[76.979134] (-) TimerEvent: {}
+[77.079986] (-) TimerEvent: {}
+[77.180885] (-) TimerEvent: {}
+[77.281446] (-) TimerEvent: {}
+[77.382256] (-) TimerEvent: {}
+[77.483113] (-) TimerEvent: {}
+[77.583981] (-) TimerEvent: {}
+[77.684837] (-) TimerEvent: {}
+[77.789216] (-) TimerEvent: {}
+[77.889798] (-) TimerEvent: {}
+[77.990673] (-) TimerEvent: {}
+[78.091548] (-) TimerEvent: {}
+[78.192380] (-) TimerEvent: {}
+[78.293189] (-) TimerEvent: {}
+[78.394014] (-) TimerEvent: {}
+[78.494882] (-) TimerEvent: {}
+[78.595719] (-) TimerEvent: {}
+[78.696576] (-) TimerEvent: {}
+[78.797663] (-) TimerEvent: {}
+[78.898669] (-) TimerEvent: {}
+[78.999550] (-) TimerEvent: {}
+[79.100432] (-) TimerEvent: {}
+[79.201571] (-) TimerEvent: {}
+[79.302389] (-) TimerEvent: {}
+[79.403254] (-) TimerEvent: {}
+[79.504123] (-) TimerEvent: {}
+[79.605062] (-) TimerEvent: {}
+[79.705894] (-) TimerEvent: {}
+[79.806736] (-) TimerEvent: {}
+[79.907560] (-) TimerEvent: {}
+[80.008502] (-) TimerEvent: {}
+[80.109143] (-) TimerEvent: {}
+[80.210085] (-) TimerEvent: {}
+[80.311182] (-) TimerEvent: {}
+[80.412189] (-) TimerEvent: {}
+[80.513170] (-) TimerEvent: {}
+[80.614139] (-) TimerEvent: {}
+[80.715070] (-) TimerEvent: {}
+[80.816099] (-) TimerEvent: {}
+[80.917170] (-) TimerEvent: {}
+[81.018156] (-) TimerEvent: {}
+[81.119516] (-) TimerEvent: {}
+[81.220409] (-) TimerEvent: {}
+[81.321427] (-) TimerEvent: {}
+[81.422793] (-) TimerEvent: {}
+[81.523814] (-) TimerEvent: {}
+[81.624824] (-) TimerEvent: {}
+[81.725852] (-) TimerEvent: {}
+[81.826874] (-) TimerEvent: {}
+[81.927892] (-) TimerEvent: {}
+[82.028961] (-) TimerEvent: {}
+[82.129569] (-) TimerEvent: {}
+[82.230570] (-) TimerEvent: {}
+[82.331771] (-) TimerEvent: {}
+[82.432630] (-) TimerEvent: {}
+[82.537656] (-) TimerEvent: {}
+[82.641158] (-) TimerEvent: {}
+[82.744198] (-) TimerEvent: {}
+[82.848135] (-) TimerEvent: {}
+[82.948922] (-) TimerEvent: {}
+[83.049502] (-) TimerEvent: {}
+[83.150023] (-) TimerEvent: {}
+[83.250529] (-) TimerEvent: {}
+[83.351084] (-) TimerEvent: {}
+[83.452851] (-) TimerEvent: {}
+[83.553683] (-) TimerEvent: {}
+[83.654600] (-) TimerEvent: {}
+[83.755224] (-) TimerEvent: {}
+[83.855879] (-) TimerEvent: {}
+[83.956479] (-) TimerEvent: {}
+[84.057155] (-) TimerEvent: {}
+[84.157696] (-) TimerEvent: {}
+[84.258237] (-) TimerEvent: {}
+[84.358757] (-) TimerEvent: {}
+[84.459267] (-) TimerEvent: {}
+[84.559776] (-) TimerEvent: {}
+[84.660293] (-) TimerEvent: {}
+[84.760867] (-) TimerEvent: {}
+[84.861420] (-) TimerEvent: {}
+[84.961895] (-) TimerEvent: {}
+[85.062370] (-) TimerEvent: {}
+[85.162887] (-) TimerEvent: {}
+[85.263636] (-) TimerEvent: {}
+[85.364167] (-) TimerEvent: {}
+[85.464685] (-) TimerEvent: {}
+[85.565220] (-) TimerEvent: {}
+[85.665700] (-) TimerEvent: {}
+[85.766244] (-) TimerEvent: {}
+[85.866744] (-) TimerEvent: {}
+[85.967350] (-) TimerEvent: {}
+[86.067838] (-) TimerEvent: {}
+[86.168320] (-) TimerEvent: {}
+[86.268853] (-) TimerEvent: {}
+[86.369356] (-) TimerEvent: {}
+[86.469880] (-) TimerEvent: {}
+[86.570389] (-) TimerEvent: {}
+[86.670898] (-) TimerEvent: {}
+[86.771433] (-) TimerEvent: {}
+[86.871953] (-) TimerEvent: {}
+[86.972456] (-) TimerEvent: {}
+[87.072958] (-) TimerEvent: {}
+[87.173479] (-) TimerEvent: {}
+[87.273987] (-) TimerEvent: {}
+[87.374505] (-) TimerEvent: {}
+[87.475006] (-) TimerEvent: {}
+[87.575522] (-) TimerEvent: {}
+[87.676032] (-) TimerEvent: {}
+[87.776530] (-) TimerEvent: {}
+[87.877050] (-) TimerEvent: {}
+[87.977566] (-) TimerEvent: {}
+[88.078078] (-) TimerEvent: {}
+[88.178587] (-) TimerEvent: {}
+[88.279662] (-) TimerEvent: {}
+[88.380334] (-) TimerEvent: {}
+[88.480830] (-) TimerEvent: {}
+[88.581417] (-) TimerEvent: {}
+[88.681917] (-) TimerEvent: {}
+[88.782484] (-) TimerEvent: {}
+[88.883177] (-) TimerEvent: {}
+[88.983709] (-) TimerEvent: {}
+[89.084217] (-) TimerEvent: {}
+[89.184699] (-) TimerEvent: {}
+[89.285252] (-) TimerEvent: {}
+[89.385902] (-) TimerEvent: {}
+[89.486624] (-) TimerEvent: {}
+[89.587115] (-) TimerEvent: {}
+[89.687653] (-) TimerEvent: {}
+[89.788167] (-) TimerEvent: {}
+[89.888668] (-) TimerEvent: {}
+[89.989156] (-) TimerEvent: {}
+[90.089681] (-) TimerEvent: {}
+[90.190182] (-) TimerEvent: {}
+[90.290706] (-) TimerEvent: {}
+[90.391223] (-) TimerEvent: {}
+[90.491703] (-) TimerEvent: {}
+[90.592221] (-) TimerEvent: {}
+[90.692757] (-) TimerEvent: {}
+[90.793258] (-) TimerEvent: {}
+[90.893776] (-) TimerEvent: {}
+[90.994313] (-) TimerEvent: {}
+[91.094837] (-) TimerEvent: {}
+[91.195392] (-) TimerEvent: {}
+[91.296058] (-) TimerEvent: {}
+[91.396599] (-) TimerEvent: {}
+[91.438980] (stage_ros2) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libstage_node.so\x1b[0m\n'}
+[91.496775] (-) TimerEvent: {}
+[91.597338] (-) TimerEvent: {}
+[91.697875] (-) TimerEvent: {}
+[91.798650] (-) TimerEvent: {}
+[91.899175] (-) TimerEvent: {}
+[91.999742] (-) TimerEvent: {}
+[92.100313] (-) TimerEvent: {}
+[92.200918] (-) TimerEvent: {}
+[92.301509] (-) TimerEvent: {}
+[92.402068] (-) TimerEvent: {}
+[92.502594] (-) TimerEvent: {}
+[92.603144] (-) TimerEvent: {}
+[92.703810] (-) TimerEvent: {}
+[92.804415] (-) TimerEvent: {}
+[92.905017] (-) TimerEvent: {}
+[93.005619] (-) TimerEvent: {}
+[93.106133] (-) TimerEvent: {}
+[93.206707] (-) TimerEvent: {}
+[93.307320] (-) TimerEvent: {}
+[93.407891] (-) TimerEvent: {}
+[93.508502] (-) TimerEvent: {}
+[93.609107] (-) TimerEvent: {}
+[93.709652] (-) TimerEvent: {}
+[93.810233] (-) TimerEvent: {}
+[93.910831] (-) TimerEvent: {}
+[94.011380] (-) TimerEvent: {}
+[94.111891] (-) TimerEvent: {}
+[94.160438] (stage_ros2) StdoutLine: {'line': b'[ 71%] Built target stage_node\n'}
+[94.200044] (stage_ros2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/stage_ros2.dir/src/main.cpp.o\x1b[0m\n'}
+[94.212082] (-) TimerEvent: {}
+[94.312601] (-) TimerEvent: {}
+[94.413184] (-) TimerEvent: {}
+[94.513720] (-) TimerEvent: {}
+[94.614248] (-) TimerEvent: {}
+[94.714810] (-) TimerEvent: {}
+[94.815369] (-) TimerEvent: {}
+[94.915929] (-) TimerEvent: {}
+[95.016516] (-) TimerEvent: {}
+[95.117107] (-) TimerEvent: {}
+[95.217636] (-) TimerEvent: {}
+[95.318285] (-) TimerEvent: {}
+[95.418866] (-) TimerEvent: {}
+[95.519417] (-) TimerEvent: {}
+[95.620017] (-) TimerEvent: {}
+[95.720608] (-) TimerEvent: {}
+[95.821179] (-) TimerEvent: {}
+[95.921744] (-) TimerEvent: {}
+[96.022348] (-) TimerEvent: {}
+[96.122911] (-) TimerEvent: {}
+[96.223510] (-) TimerEvent: {}
+[96.324076] (-) TimerEvent: {}
+[96.424741] (-) TimerEvent: {}
+[96.525293] (-) TimerEvent: {}
+[96.625880] (-) TimerEvent: {}
+[96.726429] (-) TimerEvent: {}
+[96.827007] (-) TimerEvent: {}
+[96.927563] (-) TimerEvent: {}
+[97.028155] (-) TimerEvent: {}
+[97.128714] (-) TimerEvent: {}
+[97.229256] (-) TimerEvent: {}
+[97.329838] (-) TimerEvent: {}
+[97.430375] (-) TimerEvent: {}
+[97.530960] (-) TimerEvent: {}
+[97.631549] (-) TimerEvent: {}
+[97.732063] (-) TimerEvent: {}
+[97.832652] (-) TimerEvent: {}
+[97.933174] (-) TimerEvent: {}
+[98.033744] (-) TimerEvent: {}
+[98.134348] (-) TimerEvent: {}
+[98.234906] (-) TimerEvent: {}
+[98.335444] (-) TimerEvent: {}
+[98.436005] (-) TimerEvent: {}
+[98.536601] (-) TimerEvent: {}
+[98.637184] (-) TimerEvent: {}
+[98.737847] (-) TimerEvent: {}
+[98.838432] (-) TimerEvent: {}
+[98.939002] (-) TimerEvent: {}
+[99.039566] (-) TimerEvent: {}
+[99.140173] (-) TimerEvent: {}
+[99.240744] (-) TimerEvent: {}
+[99.341328] (-) TimerEvent: {}
+[99.441873] (-) TimerEvent: {}
+[99.542457] (-) TimerEvent: {}
+[99.643031] (-) TimerEvent: {}
+[99.743623] (-) TimerEvent: {}
+[99.844382] (-) TimerEvent: {}
+[99.945146] (-) TimerEvent: {}
+[100.045875] (-) TimerEvent: {}
+[100.146428] (-) TimerEvent: {}
+[100.247015] (-) TimerEvent: {}
+[100.347569] (-) TimerEvent: {}
+[100.448121] (-) TimerEvent: {}
+[100.548705] (-) TimerEvent: {}
+[100.649211] (-) TimerEvent: {}
+[100.749753] (-) TimerEvent: {}
+[100.850318] (-) TimerEvent: {}
+[100.950909] (-) TimerEvent: {}
+[101.051462] (-) TimerEvent: {}
+[101.152015] (-) TimerEvent: {}
+[101.252565] (-) TimerEvent: {}
+[101.353109] (-) TimerEvent: {}
+[101.453651] (-) TimerEvent: {}
+[101.554189] (-) TimerEvent: {}
+[101.654754] (-) TimerEvent: {}
+[101.755318] (-) TimerEvent: {}
+[101.855881] (-) TimerEvent: {}
+[101.956423] (-) TimerEvent: {}
+[102.056955] (-) TimerEvent: {}
+[102.157590] (-) TimerEvent: {}
+[102.237201] (stage_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stage_ros2\x1b[0m\n'}
+[102.257788] (-) TimerEvent: {}
+[102.358316] (-) TimerEvent: {}
+[102.458933] (-) TimerEvent: {}
+[102.559498] (-) TimerEvent: {}
+[102.660055] (-) TimerEvent: {}
+[102.760574] (-) TimerEvent: {}
+[102.861148] (-) TimerEvent: {}
+[102.961744] (-) TimerEvent: {}
+[103.062296] (-) TimerEvent: {}
+[103.162851] (-) TimerEvent: {}
+[103.263437] (-) TimerEvent: {}
+[103.363957] (-) TimerEvent: {}
+[103.464574] (-) TimerEvent: {}
+[103.565194] (-) TimerEvent: {}
+[103.665715] (-) TimerEvent: {}
+[103.766280] (-) TimerEvent: {}
+[103.866784] (-) TimerEvent: {}
+[103.967337] (-) TimerEvent: {}
+[103.993444] (stage_ros2) StdoutLine: {'line': b'[100%] Built target stage_ros2\n'}
+[104.015027] (stage_ros2) CommandEnded: {'returncode': 0}
+[104.067467] (-) TimerEvent: {}
+[104.070128] (stage_ros2) JobProgress: {'identifier': 'stage_ros2', 'progress': 'install'}
+[104.070935] (stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zeeshan/ros2_ws/build/stage_ros2'], 'cwd': '/home/zeeshan/ros2_ws/build/stage_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zeeshan'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zeeshan/ros2_ws/install/Stage/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zeeshan'), ('OLDPWD', '/home/zeeshan/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/zeeshan/.nvm/versions/node/v18.20.3/bin'), ('NVM_INC', '/home/zeeshan/.nvm/versions/node/v18.20.3/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '5003'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/zeeshan/.nvm'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeeshan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeeshan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zeeshan/ros2_ws/install/Stage/bin:/opt/ros/humble/bin:/home/zeeshan/.nvm/versions/node/v18.20.3/bin:/home/zeeshan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeeshan-F15Plus-2:@/tmp/.ICE-unix/2402,unix/zeeshan-F15Plus-2:/tmp/.ICE-unix/2402'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8966bd1_4c79_4456_a182_27e1b2fb5449'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeeshan/ros2_ws/build/stage_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zeeshan/ros2_ws/install/Stage:/opt/ros/humble')]), 'shell': False}
+[104.086588] (stage_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[104.087317] (stage_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[104.087807] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/environment/library_path.sh\n'}
+[104.105348] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/environment/library_path.dsv\n'}
+[104.123013] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//launch/demo.launch.py\n'}
+[104.140071] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//launch/f710.launch.py\n'}
+[104.156981] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//launch/rviz.launch.py\n'}
+[104.167657] (-) TimerEvent: {}
+[104.174288] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//launch/rviz_ns.launch.py\n'}
+[104.191688] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//launch/stage.launch.py\n'}
+[104.209636] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/cave.png\n'}
+[104.226742] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/hallway.pgm\n'}
+[104.244029] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/hallway.png\n'}
+[104.260876] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/line.png\n'}
+[104.267824] (-) TimerEvent: {}
+[104.278285] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/straden.png\n'}
+[104.295405] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse008.pgm\n'}
+[104.313307] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse032.pgm\n'}
+[104.331182] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse200.pgm\n'}
+[104.349201] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/willow-full.pgm\n'}
+[104.367401] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/cave.world\n'}
+[104.367912] (-) TimerEvent: {}
+[104.384682] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/cave_seven_robots.world\n'}
+[104.401807] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/cave_three_robots.world\n'}
+[104.419080] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/hallway.world\n'}
+[104.436066] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/include/pioneer2dx.inc\n'}
+[104.453178] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/include/robots.inc\n'}
+[104.468120] (-) TimerEvent: {}
+[104.470909] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/lines.world\n'}
+[104.487882] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/straden.world\n'}
+[104.505521] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//world/willow-four-erratics-multisensor.world\n'}
+[104.523140] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave.rviz\n'}
+[104.540158] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_seven_robots.rviz\n'}
+[104.557245] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_three_robots.rviz\n'}
+[104.568267] (-) TimerEvent: {}
+[104.575093] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/rviz/lines.rviz\n'}
+[104.592290] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot0.rviz\n'}
+[104.609655] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns.rviz\n'}
+[104.627212] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns_depth.rviz\n'}
+[104.645346] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2//config/teleop_twist_joy/f710.config.yaml\n'}
+[104.664715] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/lib/libstage_node.so\n'}
+[104.668390] (-) TimerEvent: {}
+[104.683813] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/lib/stage_ros2/stage_ros2\n'}
+[104.702882] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/ament_index/resource_index/package_run_dependencies/stage_ros2\n'}
+[104.721353] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/ament_index/resource_index/parent_prefix_path/stage_ros2\n'}
+[104.739782] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.sh\n'}
+[104.758041] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.dsv\n'}
+[104.768591] (-) TimerEvent: {}
+[104.776932] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/environment/path.sh\n'}
+[104.795267] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/environment/path.dsv\n'}
+[104.815404] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/local_setup.bash\n'}
+[104.834669] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/local_setup.sh\n'}
+[104.853943] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/local_setup.zsh\n'}
+[104.868787] (-) TimerEvent: {}
+[104.872851] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/local_setup.dsv\n'}
+[104.891994] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.dsv\n'}
+[104.911115] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/ament_index/resource_index/packages/stage_ros2\n'}
+[104.929979] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config.cmake\n'}
+[104.948765] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config-version.cmake\n'}
+[104.968101] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/zeeshan/ros2_ws/install/stage_ros2/share/stage_ros2/package.xml\n'}
+[104.968852] (-) TimerEvent: {}
+[104.989887] (stage_ros2) CommandEnded: {'returncode': 0}
+[105.069005] (-) TimerEvent: {}
+[105.076521] (stage_ros2) JobEnded: {'identifier': 'stage_ros2', 'rc': 0}
+[105.077662] (-) EventReactorShutdown: {}

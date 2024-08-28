@@ -1,0 +1,37 @@
+<launch>
+
+    <node pkg="rviz2" exec="rviz2" args="-d src/simple_planner/config/visualization.rviz"/>
+    
+    <node pkg="stage_ros2" exec="stage_ros2" name="stage">
+        <param name="world_file" value="src/worlds/src/cappero/cappero_laser_odom_diag.world"/>
+    </node>
+    
+    <node pkg="nav2_map_server" exec="map_server" name="map_server" output="screen">
+        <param name="yaml_filename" value="src/worlds/src/cappero/cappero_laser_odom_diag.yaml"/>
+    </node>
+    
+    <node pkg="nav2_amcl" exec="amcl" name="amcl" output="screen">
+        <param from="src/simple_planner/config/amcl.yaml"/>
+    </node>
+    
+    <node pkg="nav2_planner" exec="planner_server" name="planner_server" output="screen">
+        <param from="src/simple_planner/config/params.yaml"/>
+    </node>
+    
+    <node pkg="nav2_controller" exec="controller_server" name="controller_server" output="screen">
+        <param from="src/simple_planner/config/params.yaml"/>
+    </node>
+    
+    <node pkg="nav2_bt_navigator" exec="bt_navigator" name="bt_navigator" output="screen">
+        <param from="src/simple_planner/config/bt_navigator.yaml"/>
+    </node>
+    
+    <node pkg="nav2_lifecycle_manager" exec="lifecycle_manager" name="lifecycle_manager" output="screen">
+        <param name="autostart" value="true"/>
+        <param name="node_names" value="['map_server', 'amcl', 'planner_server', 'controller_server', 'bt_navigator']"/>
+    </node>
+      
+    <node pkg="rqt_graph" exec="rqt_graph"/>
+    
+    <node pkg="simple_planner" exec="simple_planner" name="simple_planner" output="screen"/> 
+</launch>

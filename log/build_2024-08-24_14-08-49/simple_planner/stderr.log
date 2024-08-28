@@ -1,0 +1,7 @@
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:[m[K In member function ‘[01m[Kvoid SimplePlanner::publish_velocity_to_goal(const TransformStamped&, const PoseStamped&)[m[K’:
+[01m[K/home/zeeshan/ros2_ws/src/simple_planner/src/simple_planner.cpp:149:57:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+  149 |             double angle_to_goal = atan2(dy, dx) - tf2::[01;31m[KgetYaw[m[K(current_pose.transform.rotation);
+      |                                                         [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_planner.dir/build.make:76: CMakeFiles/simple_planner.dir/src/simple_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_planner.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

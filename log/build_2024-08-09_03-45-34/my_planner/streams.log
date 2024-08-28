@@ -1,0 +1,98 @@
+[0.020s] Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/my_planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/my_planner
+[0.127s] -- The C compiler identification is GNU 11.4.0
+[0.235s] -- The CXX compiler identification is GNU 11.4.0
+[0.248s] -- Detecting C compiler ABI info
+[0.378s] -- Detecting C compiler ABI info - done
+[0.394s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.394s] -- Detecting C compile features
+[0.395s] -- Detecting C compile features - done
+[0.401s] -- Detecting CXX compiler ABI info
+[0.555s] -- Detecting CXX compiler ABI info - done
+[0.572s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.572s] -- Detecting CXX compile features
+[0.573s] -- Detecting CXX compile features - done
+[0.578s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.479s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.649s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.726s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.735s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.752s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.781s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.822s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.975s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.980s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.170s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.217s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.305s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.323s] -- Looking for pthread.h
+[2.466s] -- Looking for pthread.h - found
+[2.466s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.608s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.610s] -- Found Threads: TRUE  
+[3.002s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.687s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.901s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.760s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.788s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.790s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.790s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.947s] -- Configuring done
+[4.972s] -- Generating done
+[4.976s] -- Build files have been written to: /home/zeeshan/ros2_ws/build/my_planner
+[4.996s] Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zeeshan/ros2_ws/src/my_planner -DCMAKE_INSTALL_PREFIX=/home/zeeshan/ros2_ws/install/my_planner
+[4.999s] Invoking command in '/home/zeeshan/ros2_ws/build/my_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4
+[5.081s] [35m[1mConsolidate compiler generated dependencies of target planner_node[0m
+[5.124s] [ 20%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/visualizer.cpp.o[0m
+[5.124s] [ 40%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/map.cpp.o[0m
+[5.125s] [ 60%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/planner_node.cpp.o[0m
+[5.126s] [ 80%] [32mBuilding CXX object CMakeFiles/planner_node.dir/src/astar.cpp.o[0m
+[5.878s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:[m[K In function ‘[01m[Kstd::vector<std::pair<int, int> > astar(const Map&, int, int, int, int)[m[K’:
+[5.878s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:31:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::width_[m[K’ is private within this context
+[5.878s]    31 |     std::vector<std::vector<bool>> closed_set(map.[01;31m[Kwidth_[m[K, std::vector<bool>(map.height_, false));
+[5.879s]       |                                                   [01;31m[K^~~~~~[m[K
+[5.879s] In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+[5.879s]                  from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[5.879s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:19:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.879s]    19 |     int [01;36m[Kwidth_[m[K;
+[5.879s]       |         [01;36m[K^~~~~~[m[K
+[5.879s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:31:51:[m[K [01;36m[Knote: [m[Kfield ‘[01m[Kint Map::width_[m[K’ can be accessed via ‘[01m[Kint Map::getWidth() const[m[K’
+[5.880s]    31 |     std::vector<std::vector<bool>> closed_set(map.[01;36m[Kwidth_[m[K, std::vector<bool>(map.height_, false));
+[5.880s]       |                                                   [01;36m[K^~~~~~[m[K
+[5.880s]       |                                                   [32m[KgetWidth()[m[K
+[5.883s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:31:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::height_[m[K’ is private within this context
+[5.883s]    31 |     std::vector<std::vector<bool>> closed_set(map.width_, std::vector<bool>(map.[01;31m[Kheight_[m[K, false));
+[5.883s]       |                                                                                 [01;31m[K^~~~~~~[m[K
+[5.883s] In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+[5.884s]                  from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[5.884s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:20:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.884s]    20 |     int [01;36m[Kheight_[m[K;
+[5.884s]       |         [01;36m[K^~~~~~~[m[K
+[5.903s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:65:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::width_[m[K’ is private within this context
+[5.903s]    65 |             if (nx >= 0 && nx < map.[01;31m[Kwidth_[m[K && ny >= 0 && ny < map.height_ && !closed_set[nx][ny] && !map.isOccupied(nx, ny))
+[5.903s]       |                                     [01;31m[K^~~~~~[m[K
+[5.903s] In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+[5.903s]                  from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[5.904s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:19:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.904s]    19 |     int [01;36m[Kwidth_[m[K;
+[5.904s]       |         [01;36m[K^~~~~~[m[K
+[5.904s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:65:37:[m[K [01;36m[Knote: [m[Kfield ‘[01m[Kint Map::width_[m[K’ can be accessed via ‘[01m[Kint Map::getWidth() const[m[K’
+[5.904s]    65 |             if (nx >= 0 && nx < map.[01;36m[Kwidth_[m[K && ny >= 0 && ny < map.height_ && !closed_set[nx][ny] && !map.isOccupied(nx, ny))
+[5.904s]       |                                     [01;36m[K^~~~~~[m[K
+[5.905s]       |                                     [32m[KgetWidth()[m[K
+[5.905s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:65:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kint Map::height_[m[K’ is private within this context
+[5.905s]    65 |             if (nx >= 0 && nx < map.width_ && ny >= 0 && ny < map.[01;31m[Kheight_[m[K && !closed_set[nx][ny] && !map.isOccupied(nx, ny))
+[5.905s]       |                                                                   [01;31m[K^~~~~~~[m[K
+[5.905s] In file included from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.hpp:6[m[K,
+[5.905s]                  from [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:1[m[K:
+[5.906s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/map.hpp:20:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+[5.906s]    20 |     int [01;36m[Kheight_[m[K;
+[5.906s]       |         [01;36m[K^~~~~~~[m[K
+[5.906s] [01m[K/home/zeeshan/ros2_ws/src/my_planner/src/astar.cpp:65:67:[m[K [01;36m[Knote: [m[Kfield ‘[01m[Kint Map::height_[m[K’ can be accessed via ‘[01m[Kint Map::getHeight() const[m[K’
+[5.906s]    65 |             if (nx >= 0 && nx < map.width_ && ny >= 0 && ny < map.[01;36m[Kheight_[m[K && !closed_set[nx][ny] && !map.isOccupied(nx, ny))
+[5.906s]       |                                                                   [01;36m[K^~~~~~~[m[K
+[5.907s]       |                                                                   [32m[KgetHeight()[m[K
+[6.060s] gmake[2]: *** [CMakeFiles/planner_node.dir/build.make:104: CMakeFiles/planner_node.dir/src/astar.cpp.o] Error 1
+[6.061s] gmake[2]: *** Waiting for unfinished jobs....
+[16.223s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/planner_node.dir/all] Error 2
+[16.223s] gmake: *** [Makefile:146: all] Error 2
+[16.226s] Invoked command in '/home/zeeshan/ros2_ws/build/my_planner' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zeeshan/ros2_ws/build/my_planner -- -j4 -l4
