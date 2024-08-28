@@ -84,6 +84,7 @@ The project is organized as follows:
    - In this project, the goal pose is set using the RViz tool (by publishing to `/goal_pose`), and the planner listens to the goal pose updates to begin the pathfinding process.
 
 
+
 ### Dependencies:
 - **ROS 2 Humble**
 - **Nav2 Stack**
