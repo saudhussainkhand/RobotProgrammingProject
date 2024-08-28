@@ -86,6 +86,7 @@ The project is organized as follows:
 
 
 ### Dependencies:
+- **Ubuntu 22.04**
 - **ROS 2 Humble**
 - **Nav2 Stack**
 - **OpenCV**
